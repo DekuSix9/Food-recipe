@@ -1,13 +1,25 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo/CP-Logo 1.svg";
 import { CiSearch } from "react-icons/ci";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
+import { AuthContext } from "../../Layout/AuthLayout/AuthLayout";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const {user,logOutUser}=useContext(AuthContext);
+
+  const handleLogOut=()=>{
+    logOutUser()
+    .then(result=>{
+      console.log(result)
+    })
+    .catch(error=>{
+      console.log(error.message)
+    })
+  }
 
   return (
     <nav className="  px-4 py-3 md:px-8">
@@ -60,9 +72,14 @@ const Navbar = () => {
             />
             <CiSearch className="w-5 h-5 text-gray-400 absolute left-3 top-2.5" />
           </div>
+          {
+             user?<Link  onClick={handleLogOut} className="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-5 py-2 rounded-full shadow-md transition duration-200">Log Out</Link>
+          :
           <Link to='/login'  className="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-5 py-2 rounded-full shadow-md transition duration-200">
             Login
              </Link>
+          }
+         
            </div>
 
         {/* Mobile menu button */}
