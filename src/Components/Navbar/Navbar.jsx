@@ -22,7 +22,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="  px-4 py-3 md:px-8">
+    <nav className="  px-4 py-4 md:px-8 w-11/12 mx-auto ">
       <div className="flex items-center justify-between">
 
         {/* Logo */}
@@ -73,9 +73,9 @@ const Navbar = () => {
             <CiSearch className="w-5 h-5 text-gray-400 absolute left-3 top-2.5" />
           </div>
           {
-             user?<Link  onClick={handleLogOut} className="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-5 py-2 rounded-full shadow-md transition duration-200">Log Out</Link>
+             user?<button  onClick={handleLogOut} className="bg-red-600 cursor-pointer  hover:bg-red-700 text-white font-medium px-5 py-2 rounded-full shadow-md transition duration-200">Log Out</button>
           :
-          <Link to='/login'  className="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-5 py-2 rounded-full shadow-md transition duration-200">
+          <Link to='/login'  className="bg-emerald-600 hover:bg-gray-900 text-white font-medium px-5 py-2 rounded-full shadow-md transition duration-200">
             Login
              </Link>
           }
@@ -135,7 +135,7 @@ const Navbar = () => {
               />
               <CiSearch className="w-5 h-5 text-gray-400 absolute left-3 top-2.5" />
             </div>
-            <Link to='/login' className="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-5 py-2 rounded-full shadow-md transition duration-200 w-full">
+            <Link to='/login' className="bg-emerald-600 hover:bg-gray-900 text-white font-medium px-5 py-2 rounded-full shadow-md transition duration-200 w-full">
               Login
             </Link>
           </div>
