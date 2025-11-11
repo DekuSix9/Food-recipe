@@ -26,7 +26,7 @@ const fastestRecipes =[...recipes].sort((a,b)=>parseInt(a.duration)-parseInt(b.d
 
 
     return (
-        <div className=' px-3 py-16'>
+        <div className=' px-3 py-12'>
             <Tabs>
     <TabList className=' flex gap-8 items-center justify-center border-b border-gray-200 '>
       <Tab className="text-xl font-semibold text-gray-400 pb-2 cursor-pointer"
@@ -45,7 +45,7 @@ const fastestRecipes =[...recipes].sort((a,b)=>parseInt(a.duration)-parseInt(b.d
     {/* latestRecipes */}
    <TabPanel >
     {/* card */}
-      <div className='grid grid-cols-1  md:grid-cols-3 lg:grid-cols-5 gap-5 my-12'>
+      <div className='grid grid-cols-1  md:grid-cols-3 lg:grid-cols-5 gap-5 my-10'>
          {
     latestRecipes.map(recipe=>(
       
