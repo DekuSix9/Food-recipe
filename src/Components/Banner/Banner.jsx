@@ -27,6 +27,7 @@ const Banner = () => {
    <button className=" absolute right-2 bottom-3   bg-emerald-600 rounded-lg hover:bg-gray-900 px-4 py-2 flex items-center justify-center transition duration-200">
       <CiSearch className="text-white h-6 w-6" />
     </button>
+    
       </div>
   
 

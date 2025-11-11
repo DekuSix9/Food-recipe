@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "foodName": "Spaghetti Carbonara",
+    "title": "Creamy Italian Pasta",
+    "rating": 4.8,
+    "duration": "25 min",
+    "date": "2025-11-01",
+    "country": "Italy",
+    "category": "fast food",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL6g5t190Z17oERXVjFfPo8MEFKcaodOyplQ&s"
+  },
+  {
+    "id": 2,
+    "foodName": "Chicken Biryani",
+    "title": "Spicy Layered Rice",
+    "rating": 4.9,
+    "duration": "60 min",
+    "date": "2025-10-28",
+    "country": "India",
+    "category": "healthy",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL6g5t190Z17oERXVjFfPo8MEFKcaodOyplQ&s"
+  },
+  {
+    "id": 3,
+    "foodName": "Sushi Roll",
+    "title": "Fresh Japanese Delight",
+    "rating": 4.7,
+    "duration": "30 min",
+    "date": "2025-11-05",
+    "country": "Japan",
+    "category": "sea food",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL6g5t190Z17oERXVjFfPo8MEFKcaodOyplQ&s"
+  },
+  {
+    "id": 4,
+    "foodName": "Tacos al Pastor",
+    "title": "Mexican Street Favorite",
+    "rating": 4.6,
+    "duration": "35 min",
+    "date": "2025-10-30",
+    "country": "Mexico",
+    "category": "fast food",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL6g5t190Z17oERXVjFfPo8MEFKcaodOyplQ&s"
+  },
+  {
+    "id": 5,
+    "foodName": "Butter Chicken",
+    "title": "Rich Creamy Curry",
+    "rating": 4.9,
+    "duration": "45 min",
+    "date": "2025-11-03",
+    "country": "India",
+    "category": "healthy",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL6g5t190Z17oERXVjFfPo8MEFKcaodOyplQ&s"
+  },
+  {
+    "id": 6,
+    "foodName": "Mango Smoothie",
+    "title": "Refreshing Summer Drink",
+    "rating": 4.4,
+    "duration": "10 min",
+    "date": "2025-11-06",
+    "country": "Thailand",
+    "category": "drink",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL6g5t190Z17oERXVjFfPo8MEFKcaodOyplQ&s"
+  },
+  {
+    "id": 7,
+    "foodName": "Chocolate Lava Cake",
+    "title": "Warm and Gooey Dessert",
+    "rating": 5.0,
+    "duration": "35 min",
+    "date": "2025-10-29",
+    "country": "France",
+    "category": "desserts",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL6g5t190Z17oERXVjFfPo8MEFKcaodOyplQ&s"
+  },
+  {
+    "id": 8,
+    "foodName": "Greek Salad",
+    "title": "Fresh and Light Mix",
+    "rating": 4.3,
+    "duration": "15 min",
+    "date": "2025-11-07",
+    "country": "Greece",
+    "category": "vegetarian",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL6g5t190Z17oERXVjFfPo8MEFKcaodOyplQ&s"
+  },
+  {
+    "id": 9,
+    "foodName": "Grilled Salmon",
+    "title": "Healthy Protein Meal",
+    "rating": 4.8,
+    "duration": "25 min",
+    "date": "2025-10-31",
+    "country": "Norway",
+    "category": "sea food",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL6g5t190Z17oERXVjFfPo8MEFKcaodOyplQ&s"
+  },
+  {
+    "id": 10,
+    "foodName": "Veggie Burger",
+    "title": "Plant-Based Fast Food",
+    "rating": 4.5,
+    "duration": "20 min",
+    "date": "2025-11-04",
+    "country": "USA",
+    "category": "vegetarian",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL6g5t190Z17oERXVjFfPo8MEFKcaodOyplQ&s"
+  }
+]

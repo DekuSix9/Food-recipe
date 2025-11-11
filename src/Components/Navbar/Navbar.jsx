@@ -22,8 +22,9 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="  px-4 py-4 md:px-8 w-11/12 mx-auto ">
-      <div className="flex items-center justify-between">
+    <nav className="   sticky top-0 z-50 bg-white  ">
+      <div className=" px-4 py-4 md:px-8 w-11/12 mx-auto">
+        <div className="flex items-center justify-between">
 
         {/* Logo */}
         <Link to='/' className="flex items-center">
@@ -91,7 +92,7 @@ const Navbar = () => {
         </button>
              </div>
 
-      {/* Mobile menu */}
+               {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200 mt-3 rounded-lg p-4 space-y-3 font-semibold text-gray-700 shadow-sm">
 
@@ -142,6 +143,10 @@ const Navbar = () => {
 
         </div>
       )}
+      </div>
+    
+
+    
     </nav>
   );
 };
