@@ -86,27 +86,6 @@
     "country": "Greece",
     "category": "vegetarian",
     "image": "https://images.unsplash.com/photo-1599021419847-d8a7a6aba5b4?q=80&w=979&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  },
-  {
-    "id": 9,
-    "foodName": "Grilled Salmon",
-    "title": "Healthy Protein Meal",
-    "rating": 4.8,
-    "duration": "25 min",
-    "date": "2025-10-31",
-    "country": "Norway",
-    "category": "sea food",
-    "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  },
-  {
-    "id": 10,
-    "foodName": "Veggie Burger",
-    "title": "Plant-Based Fast Food",
-    "rating": 4.5,
-    "duration": "20 min",
-    "date": "2025-11-04",
-    "country": "USA",
-    "category": "vegetarian",
-    "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
+ 
 ]

@@ -13,8 +13,8 @@ const Banner = () => {
 
            {/* title,subtitle and search bar */}
         <div className=' pl-4  md:pl-8 lg:pl-16 max-w-2xl'>
-               <h2 className=' text-2xl text-gray-900  md:text-3xl lg:text-5xl font-bold'>Thinking of Something  Delicious? </h2>
-      <p className=' mt-2 md:mt-4 text-black text-lg'>Don't just dream it — discover the perfect recipe that turns your  craving into a masterpiece.</p>
+               <h2 className=' text-2xl text-white  md:text-3xl lg:text-5xl font-bold'>Thinking of Something  Delicious? </h2>
+      <p className=' mt-2 md:mt-4 text-white text-lg'>Don't just dream it — discover the perfect recipe that turns your <br></br>  craving into a masterpiece.</p>
       <div className=' relative'>
      <LuCookingPot className=' h-8 w-8 absolute left-3 top-12 text-emerald-700'></LuCookingPot>
 
