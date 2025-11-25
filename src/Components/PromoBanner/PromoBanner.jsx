@@ -14,11 +14,11 @@ const PromoBanner = () => {
     <IoMdStar className="text-yellow-500 h-6 w-6" />
     <p>4.7</p>
     </button>
-      <p className="text-white ">score from 5 rating</p>
+      <p className="text-white text-lg ">score from 5 rating</p>
      </div>
      <h1 className=' text-5xl text-white mt-6 leading-12'>Discover fresh and easy recipes 
         to inspire your meals every day.</h1>
-        <p className=' text-white mt-4 leading-5  '>Discover fresh and easy recipes for every meal. From quick breakfasts and light lunches to hearty dinners
+        <p className=' text-white mt-8 leading-6 text-lg   '>Discover fresh and easy recipes for every meal. From quick breakfasts and light lunches to hearty dinners
              and indulgent desserts, find endless inspiration to make cooking simple, fun, and enjoyable
      for any occasion or gathering!</p>
 
