@@ -7,7 +7,7 @@
     "duration": "25 min",
     "date": "2025-11-01",
     "country": "Italy",
-    "category": "fast food",
+    "category": "Fast food",
     "image": "https://images.unsplash.com/photo-1633337474564-1d9478ca4e2e?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
@@ -18,7 +18,7 @@
     "duration": "60 min",
     "date": "2025-10-28",
     "country": "India",
-    "category": "healthy",
+    "category": "Healthy",
     "image": "https://plus.unsplash.com/premium_photo-1694141251673-1758913ade48?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
@@ -29,7 +29,7 @@
     "duration": "30 min",
     "date": "2025-11-05",
     "country": "Japan",
-    "category": "sea food",
+    "category": "Sea food",
     "image": "https://images.unsplash.com/photo-1628676825875-031ad212c31e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
@@ -40,7 +40,7 @@
     "duration": "35 min",
     "date": "2025-10-30",
     "country": "Mexico",
-    "category": "fast food",
+    "category": "Fast food",
     "image": "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
@@ -51,7 +51,7 @@
     "duration": "45 min",
     "date": "2025-11-03",
     "country": "India",
-    "category": "healthy",
+    "category": "Healthy",
     "image": "https://images.unsplash.com/photo-1728910107534-e04e261768ae?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
@@ -62,7 +62,7 @@
     "duration": "10 min",
     "date": "2025-11-06",
     "country": "Thailand",
-    "category": "drink",
+    "category": "Drink",
     "image": "https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
@@ -73,7 +73,7 @@
     "duration": "35 min",
     "date": "2025-10-29",
     "country": "France",
-    "category": "desserts",
+    "category": "Desserts",
     "image": "https://images.unsplash.com/photo-1673551490812-eaee2e9bf0ef?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
@@ -84,7 +84,7 @@
     "duration": "15 min",
     "date": "2025-11-07",
     "country": "Greece",
-    "category": "vegetarian",
+    "category": "Vegetarian",
     "image": "https://images.unsplash.com/photo-1599021419847-d8a7a6aba5b4?q=80&w=979&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
@@ -95,7 +95,7 @@
     "duration": "25 min",
     "date": "2025-10-31",
     "country": "Norway",
-    "category": "sea food",
+    "category": "Sea food",
     "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
@@ -106,7 +106,7 @@
     "duration": "20 min",
     "date": "2025-11-04",
     "country": "USA",
-    "category": "vegetarian",
+    "category": "Vegetarian",
     "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
 ]
