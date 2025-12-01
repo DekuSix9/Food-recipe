@@ -11,15 +11,15 @@ const Footer = () => {
         <footer className=" bg-gray-100 mt-22">
             <div className=" flex flex-col items-center justify-center py-12">
                 {/* title and text */}
-                <div>
-               <h1 className=" text-center text-4xl font-bold">Explore Our Recipes</h1>
-               <p className=" mt-2">From quick meals to healthy dishes,
+                <div className=" text-center">
+               <h1 className=" text-3xl md:text-4xl font-bold">Explore Our Recipes</h1>
+               <p className=" mt-2 text-gray-700 text-sm md:text-base">From quick meals to healthy dishes,
                  our popular tags make it easy to explore delicious options with one click.</p>
                 </div>
 
-                <div className=" flex mt-8 gap-12 items-center">
+                <div className=" flex mt-8 gap-12 items-center flex-wrap justify-center ">
                     {/* social icons */}
-                    <div className="  space-x-3">
+                    <div className="  flex gap-3 justify-center items-center ">
                        <button className="bg-gray-200 rounded-full p-2 hover:bg-gray-300 transition">
                      <CiFacebook className=" text-xl " />
                        </button>
@@ -35,7 +35,7 @@ const Footer = () => {
                     </div>
 
                     {/* link items */}
-                    <div className=" flex items-center gap-4">
+                    <div className=" flex items-center gap-3 md:gap-4 mt-4 md:mt-0 flex-wrap">
                       <button className="bg-gray-200 rounded-full 
                       px-4 py-2 hover:text-red-600 font-bold ">
                          All Recipes

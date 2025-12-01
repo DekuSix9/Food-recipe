@@ -45,17 +45,20 @@ const Categories = () => {
 
 
     return (
-        <div className=" max-w-11/12 mx-auto px-8">
-            <div className=" mt-24">
-                <div className=" flex items-center justify-center flex-col">
-                    <h1 className=" text-5xl font-bold">New Recipes</h1>
-                    <p className=" mt-2 text-lg">Explore our latest recipes, from quick snacks to hearty meals
+        <div className=" max-w-11/12 mx-auto px-4 md:px-8">
+            <div className=" mt-24 ">
+              <div className=" text-center">
+               <h1 className=" text-3xl md:text-5xl font-bold">New Recipes</h1>
+                    <p className=" mt-2 text-sm md:text-lg">Explore our latest recipes, from quick snacks to hearty meals
                          and indulgent desserts.</p>
-                </div>
+              </div>
+                
+                    
+                
 
                 {/* category button */}
 
-               <div className="flex items-center justify-center gap-4 mt-12">
+               <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4 mt-10 px-2">
                 {/* All button */}
                        <button
           
@@ -90,7 +93,7 @@ const Categories = () => {
          </div>
 
      {/* category Recipers  */}
-      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-12 gap-4 gap-y-8 ">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  mt-12 gap-4 gap-y-8 ">
                 {
                     displayRecipes.slice(0,visible).map(recipe=>
                            <div key={recipe.id} className=" overflow-hidden  bg-white">

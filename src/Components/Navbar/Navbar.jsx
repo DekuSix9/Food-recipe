@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <nav className="   sticky top-0 z-50 bg-white  ">
       <div className=" px-4 py-4 md:px-8 w-11/12 mx-auto">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-2">
 
         {/* Logo */}
         <Link to='/' className="flex items-center">

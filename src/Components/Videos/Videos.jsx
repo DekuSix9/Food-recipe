@@ -20,7 +20,7 @@ const Videos = () => {
     return (
         <div className="max-w-11/12 mx-auto px-8">
       <div className="mt-24">
-        <div className="flex items-center justify-center flex-col">
+        <div className=" text-center">
           <h1 className="text-5xl font-bold">Video Recipes</h1>
           <p className="mt-2 text-lg">
            Watch our latest recipe videos and learn step-by-step cooking tips and techniques!

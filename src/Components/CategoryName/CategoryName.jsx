@@ -34,7 +34,7 @@ const CategoryName = () => {
 
   return (
     <div className="max-w-11/12 mx-auto px-8">
-         <div className="flex mt-12 gap-8  justify-center">
+         <div className="flex mt-12 gap-8  justify-center flex-wrap">
             {uniqueCategories.map((food) => (
                <div
             key={food}

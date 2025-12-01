@@ -9,18 +9,20 @@ import Videos from "../Components/Videos/Videos";
 
 
 
+
 const Home = () => {
     return (
         <div className=" font-poppins">
             <main>
-                 <Banner></Banner>
+                <Banner></Banner>
                  <ExploreRecipes></ExploreRecipes>
-                 <PromoBanner></PromoBanner>
-                 <Categories></Categories>
-                <Videos></Videos>
-                <RecipeHighlights></RecipeHighlights>
-                <CategoryName></CategoryName>
-                <Journal></Journal>
+                  <PromoBanner></PromoBanner>
+                   <Categories></Categories>
+                    <Videos></Videos>
+                      <RecipeHighlights></RecipeHighlights>
+                 <CategoryName></CategoryName>
+                  <Journal></Journal>
+               
             </main>
              
         </div>
