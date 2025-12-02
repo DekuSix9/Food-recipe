@@ -5,6 +5,7 @@ import { IoMdStar } from "react-icons/io";
 import { FaHeart } from "react-icons/fa";
 import { CiClock2 } from "react-icons/ci";
 import { SlCalender } from "react-icons/sl";
+import { Link } from 'react-router-dom';
 
 
 
@@ -52,8 +53,11 @@ const fastestRecipes =[...recipes].sort((a,b)=>parseInt(a.duration)-parseInt(b.d
       <div key={recipe.id} className=" overflow-hidden  bg-white">
         {/* image section */}
         <div className='  relative'  >
-          <img src={recipe.image} className="w-full h-80 object-cover rounded-2xl" >
+          <Link to={`recipes/${recipe.id}`}>
+             <img src={recipe.image} className="w-full h-80 object-cover rounded-2xl" >
           </img>
+          </Link>
+         
          <button className=' bg-white flex items-center gap-1 px-2 py-1 rounded-full absolute top-4 left-4'>
            <IoMdStar className=' text-yellow-500 h-6 w-6'></IoMdStar>
              <p>{recipe.rating}</p>
@@ -100,8 +104,11 @@ const fastestRecipes =[...recipes].sort((a,b)=>parseInt(a.duration)-parseInt(b.d
       <div key={recipe.id} className=" overflow-hidden  bg-white">
         {/* image section */}
         <div className='  relative'  >
-          <img src={recipe.image} className="w-full h-80 object-cover rounded-2xl" >
+
+           <Link to={`recipes/${recipe.id}`}>
+             <img src={recipe.image} className="w-full h-80 object-cover rounded-2xl" >
           </img>
+          </Link>
          <button className=' bg-white flex items-center gap-1 px-2 py-1 rounded-full absolute top-4 left-4'>
            <IoMdStar className=' text-yellow-500 h-6 w-6'></IoMdStar>
              <p>{recipe.rating}</p>
@@ -148,8 +155,10 @@ const fastestRecipes =[...recipes].sort((a,b)=>parseInt(a.duration)-parseInt(b.d
       <div key={recipe.id} className=" overflow-hidden  bg-white">
         {/* image section */}
         <div className='  relative'  >
-          <img src={recipe.image} className="w-full h-80 object-cover rounded-2xl" >
+          <Link to={`recipes/${recipe.id}`}>
+             <img src={recipe.image} className="w-full h-80 object-cover rounded-2xl" >
           </img>
+          </Link>
          <button className=' bg-white flex items-center gap-1 px-2 py-1 rounded-full absolute top-4 left-4'>
            <IoMdStar className=' text-yellow-500 h-6 w-6'></IoMdStar>
              <p>{recipe.rating}</p>

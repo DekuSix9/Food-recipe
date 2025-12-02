@@ -7,6 +7,7 @@ import Home from './Pages/Home';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import AuthLayout from './Layout/AuthLayout/AuthLayout';
+import RecipeDetails from './Pages/RecipeDetails/RecipeDetails';
 
 
 const router = createBrowserRouter([
@@ -28,6 +29,17 @@ const router = createBrowserRouter([
         element:<Register></Register>
 
       },
+      {
+        path:'recipes/:id',
+        element:<RecipeDetails></RecipeDetails>,
+        loader: async()=>{
+          const res=await fetch('/recipes.json');
+          return res.json();
+        }
+
+
+
+      }
 
 
     ]

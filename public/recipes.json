@@ -8,7 +8,26 @@
     "date": "2025-11-01",
     "country": "Italy",
     "category": "Fast food",
-    "image": "https://images.unsplash.com/photo-1633337474564-1d9478ca4e2e?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "https://images.unsplash.com/photo-1633337474564-1d9478ca4e2e?q=80&w=1171&auto=format&fit=crop",
+    "details": {
+      "servings": 2,
+      "difficulty": "Easy",
+      "ingredients": [
+        "200g spaghetti",
+        "2 eggs",
+        "50g parmesan cheese",
+        "80g bacon",
+        "1 tsp black pepper",
+        "Salt"
+      ],
+      "steps": [
+        "Boil the spaghetti in salt water until al dente.",
+        "Fry the bacon until crispy.",
+        "Whisk eggs with parmesan and pepper.",
+        "Mix hot pasta with bacon.",
+        "Add egg mixture and mix until creamy."
+      ]
+    }
   },
   {
     "id": 2,
@@ -19,7 +38,27 @@
     "date": "2025-10-28",
     "country": "India",
     "category": "Healthy",
-    "image": "https://plus.unsplash.com/premium_photo-1694141251673-1758913ade48?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "https://plus.unsplash.com/premium_photo-1694141251673-1758913ade48?q=80&w=1169&auto=format&fit=crop",
+    "details": {
+      "servings": 4,
+      "difficulty": "Hard",
+      "ingredients": [
+        "500g chicken",
+        "3 cups basmati rice",
+        "1 cup yogurt",
+        "Biryani masala",
+        "Fried onions",
+        "Ginger garlic paste",
+        "Saffron water"
+      ],
+      "steps": [
+        "Marinate the chicken with yogurt, spices, salt, and ginger garlic paste.",
+        "Boil rice until 70% cooked.",
+        "Layer rice and chicken in a pot.",
+        "Add fried onions and saffron water.",
+        "Cook on low flame for 30 minutes."
+      ]
+    }
   },
   {
     "id": 3,
@@ -30,7 +69,25 @@
     "date": "2025-11-05",
     "country": "Japan",
     "category": "Sea food",
-    "image": "https://images.unsplash.com/photo-1628676825875-031ad212c31e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "https://images.unsplash.com/photo-1628676825875-031ad212c31e?q=80&w=687&auto=format&fit=crop",
+    "details": {
+      "servings": 2,
+      "difficulty": "Medium",
+      "ingredients": [
+        "Nori sheet",
+        "Sushi rice",
+        "Cucumber",
+        "Crab sticks / salmon",
+        "Rice vinegar"
+      ],
+      "steps": [
+        "Prepare sushi rice with vinegar.",
+        "Place nori sheet on mat.",
+        "Spread rice evenly.",
+        "Add fillings.",
+        "Roll tightly and slice."
+      ]
+    }
   },
   {
     "id": 4,
@@ -41,7 +98,24 @@
     "date": "2025-10-30",
     "country": "Mexico",
     "category": "Fast food",
-    "image": "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?q=80&w=1171&auto=format&fit=crop",
+    "details": {
+      "servings": 3,
+      "difficulty": "Easy",
+      "ingredients": [
+        "Tortillas",
+        "Pineapple",
+        "Marinated pork",
+        "Onions",
+        "Cilantro"
+      ],
+      "steps": [
+        "Cook the marinated pork.",
+        "Warm tortillas.",
+        "Add pork, pineapple, onions, and cilantro.",
+        "Serve with lime."
+      ]
+    }
   },
   {
     "id": 5,
@@ -52,7 +126,25 @@
     "date": "2025-11-03",
     "country": "India",
     "category": "Healthy",
-    "image": "https://images.unsplash.com/photo-1728910107534-e04e261768ae?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "https://images.unsplash.com/photo-1728910107534-e04e261768ae?q=80&w=880&auto=format&fit=crop",
+    "details": {
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "Chicken",
+        "Butter",
+        "Tomato puree",
+        "Cream",
+        "Spices",
+        "Ginger garlic paste"
+      ],
+      "steps": [
+        "Cook chicken with spices.",
+        "Prepare a tomato and butter-based gravy.",
+        "Add cream and simmer.",
+        "Mix chicken and serve warm."
+      ]
+    }
   },
   {
     "id": 6,
@@ -63,7 +155,21 @@
     "date": "2025-11-06",
     "country": "Thailand",
     "category": "Drink",
-    "image": "https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?q=80&w=687&auto=format&fit=crop",
+    "details": {
+      "servings": 1,
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 mango",
+        "1 cup milk",
+        "Sugar or honey"
+      ],
+      "steps": [
+        "Blend mango pieces.",
+        "Add milk and sugar.",
+        "Blend until smooth."
+      ]
+    }
   },
   {
     "id": 7,
@@ -74,7 +180,24 @@
     "date": "2025-10-29",
     "country": "France",
     "category": "Desserts",
-    "image": "https://images.unsplash.com/photo-1673551490812-eaee2e9bf0ef?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "https://images.unsplash.com/photo-1673551490812-eaee2e9bf0ef?q=80&w=1170&auto=format&fit=crop",
+    "details": {
+      "servings": 2,
+      "difficulty": "Medium",
+      "ingredients": [
+        "Chocolate",
+        "Butter",
+        "Sugar",
+        "Eggs",
+        "Flour"
+      ],
+      "steps": [
+        "Melt chocolate and butter.",
+        "Mix with sugar and eggs.",
+        "Add flour.",
+        "Bake until edges are firm but center is molten."
+      ]
+    }
   },
   {
     "id": 8,
@@ -85,7 +208,24 @@
     "date": "2025-11-07",
     "country": "Greece",
     "category": "Vegetarian",
-    "image": "https://images.unsplash.com/photo-1599021419847-d8a7a6aba5b4?q=80&w=979&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "https://images.unsplash.com/photo-1599021419847-d8a7a6aba5b4?q=80&w=979&auto=format&fit=crop",
+    "details": {
+      "servings": 2,
+      "difficulty": "Easy",
+      "ingredients": [
+        "Tomatoes",
+        "Cucumbers",
+        "Onions",
+        "Feta cheese",
+        "Olives"
+      ],
+      "steps": [
+        "Chop vegetables.",
+        "Add olives and feta.",
+        "Drizzle olive oil and seasoning.",
+        "Toss and serve."
+      ]
+    }
   },
   {
     "id": 9,
@@ -96,7 +236,23 @@
     "date": "2025-10-31",
     "country": "Norway",
     "category": "Sea food",
-    "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=1170&auto=format&fit=crop",
+    "details": {
+      "servings": 2,
+      "difficulty": "Easy",
+      "ingredients": [
+        "Salmon fillets",
+        "Salt and pepper",
+        "Lemon",
+        "Olive oil"
+      ],
+      "steps": [
+        "Season the salmon.",
+        "Heat grill pan.",
+        "Grill each side for 4–5 mins.",
+        "Serve with lemon."
+      ]
+    }
   },
   {
     "id": 10,
@@ -107,6 +263,23 @@
     "date": "2025-11-04",
     "country": "USA",
     "category": "Vegetarian",
-    "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?q=80&w=1172&auto=format&fit=crop",
+    "details": {
+      "servings": 2,
+      "difficulty": "Medium",
+      "ingredients": [
+        "Veggie patties",
+        "Burger buns",
+        "Lettuce",
+        "Tomatoes",
+        "Sauce"
+      ],
+      "steps": [
+        "Cook veggie patty.",
+        "Toast buns.",
+        "Assemble with veggies and sauce.",
+        "Serve hot."
+      ]
+    }
   }
 ]
