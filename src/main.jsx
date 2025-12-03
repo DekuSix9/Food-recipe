@@ -8,6 +8,8 @@ import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import AuthLayout from './Layout/AuthLayout/AuthLayout';
 import RecipeDetails from './Pages/RecipeDetails/RecipeDetails';
+import Favorite from './Pages/Favorite/Favorite';
+import FavoriteContext from './Layout/FavoriteContext/FavoriteContext';
 
 
 const router = createBrowserRouter([
@@ -36,10 +38,13 @@ const router = createBrowserRouter([
           const res=await fetch('/recipes.json');
           return res.json();
         }
+      },
+      {
+        path:'/favorites',
+        element:<Favorite></Favorite>
+      },
 
-
-
-      }
+     
 
 
     ]
@@ -50,8 +55,10 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <AuthLayout> 
-      <RouterProvider router={router} />
-      </AuthLayout>
+      <FavoriteContext>
+        <RouterProvider router={router} />
+      </FavoriteContext>
+       </AuthLayout>
     
   </StrictMode>,
 )

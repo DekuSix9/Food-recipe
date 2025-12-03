@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { IoMdStar } from "react-icons/io";
@@ -6,6 +6,7 @@ import { FaHeart } from "react-icons/fa";
 import { CiClock2 } from "react-icons/ci";
 import { SlCalender } from "react-icons/sl";
 import { Link } from 'react-router-dom';
+import { CartContext } from '../../Layout/FavoriteContext/FavoriteContext';
 
 
 
@@ -13,16 +14,17 @@ import { Link } from 'react-router-dom';
 
 const ExploreRecipes = () => {
   const[recipes,setRecipe]=useState([]);
+  const{addtoFavorite}=useContext(CartContext);
    
   useEffect(()=>{
     fetch('recipes.json')
     .then(res=>res.json())
     .then(data=>setRecipe(data))
   },[])
-// sorting
-const latestRecipes=[...recipes].sort((a,b)=>new Date(b.date)-new Date(a.date)).slice(0,5);
-const topRatedRecipes=[...recipes].sort((a,b)=>parseFloat(b.rating)-parseFloat(a.rating)).slice(0,5);
-const fastestRecipes =[...recipes].sort((a,b)=>parseInt(a.duration)-parseInt(b.duration)).slice(0,5);
+         // sorting
+   const latestRecipes=[...recipes].sort((a,b)=>new Date(b.date)-new Date(a.date)).slice(0,5);
+    const topRatedRecipes=[...recipes].sort((a,b)=>parseFloat(b.rating)-parseFloat(a.rating)).slice(0,5);
+    const fastestRecipes =[...recipes].sort((a,b)=>parseInt(a.duration)-parseInt(b.duration)).slice(0,5);
 
 
 
@@ -62,7 +64,7 @@ const fastestRecipes =[...recipes].sort((a,b)=>parseInt(a.duration)-parseInt(b.d
            <IoMdStar className=' text-yellow-500 h-6 w-6'></IoMdStar>
              <p>{recipe.rating}</p>
          </button>
-          <button className=' group bg-white flex items-center px-3 py-3
+          <button onClick={()=>addtoFavorite(recipe)} className=' group cursor-pointer bg-white flex items-center px-3 py-3
            rounded-full absolute top-4 right-4'>
            <FaHeart className='  h-6 w-6 text-red-500 '></FaHeart>
              
@@ -91,7 +93,8 @@ const fastestRecipes =[...recipes].sort((a,b)=>parseInt(a.duration)-parseInt(b.d
         </div>
 </div>
     ))
-  } </div>
+  }
+   </div>
  </TabPanel>
 
  {/* TopRatedRecipe */}
@@ -113,7 +116,7 @@ const fastestRecipes =[...recipes].sort((a,b)=>parseInt(a.duration)-parseInt(b.d
            <IoMdStar className=' text-yellow-500 h-6 w-6'></IoMdStar>
              <p>{recipe.rating}</p>
          </button>
-          <button className=' group bg-white flex items-center px-3 py-3
+          <button onClick={()=>addtoFavorite(recipe)} className=' group cursor-pointer bg-white flex items-center px-3 py-3
            rounded-full absolute top-4 right-4'>
            <FaHeart className='  h-6 w-6 text-red-500 '></FaHeart>
              
@@ -163,7 +166,7 @@ const fastestRecipes =[...recipes].sort((a,b)=>parseInt(a.duration)-parseInt(b.d
            <IoMdStar className=' text-yellow-500 h-6 w-6'></IoMdStar>
              <p>{recipe.rating}</p>
          </button>
-          <button className=' group bg-white flex items-center px-3 py-3
+          <button onClick={()=>addtoFavorite(recipe)} className=' group cursor-pointer bg-white flex items-center px-3 py-3
            rounded-full absolute top-4 right-4'>
            <FaHeart className='  h-6 w-6 text-red-500 '></FaHeart>
              

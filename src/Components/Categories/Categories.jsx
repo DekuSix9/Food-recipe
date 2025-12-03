@@ -1,15 +1,17 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { IoMdStar } from "react-icons/io";
 import { FaHeart } from "react-icons/fa";
 import { CiClock2 } from "react-icons/ci";
 import { SlCalender } from "react-icons/sl";
-
+import { Link } from "react-router-dom";
+import { CartContext } from '../../Layout/FavoriteContext/FavoriteContext';
 
 const Categories = () => {
     const [recipes,setRecipes]=useState([]);
     const [displayRecipes,setDisplayRecipes]=useState([])
     const [activeCategories,setActiveCategories]=useState("all");
-    const [visible,setVisible]=useState(8)
+    const [visible,setVisible]=useState(8);
+      const{addtoFavorite}=useContext(CartContext);
 
     useEffect(()=>{
         fetch('recipes.json')
@@ -99,13 +101,16 @@ const Categories = () => {
                            <div key={recipe.id} className=" overflow-hidden  bg-white">
                                 {/* image section */}
                                 <div className='  relative'  >
-                                  <img src={recipe.image} className="w-full h-80 object-cover rounded-2xl" >
+                                  <Link to={`recipes/${recipe.id}`}>
+                                    <img src={recipe.image} className="w-full h-80 object-cover rounded-2xl" >
                                   </img>
+                                  </Link>
+                                 
                                  <button className=' bg-white flex items-center gap-1 px-2 py-1 rounded-full absolute top-4 left-4'>
                                    <IoMdStar className=' text-yellow-500 h-6 w-6'></IoMdStar>
                                      <p>{recipe.rating}</p>
                                  </button>
-                                  <button className=' group bg-white flex items-center px-3 py-3
+                                  <button onClick={()=>addtoFavorite(recipe.id)} className=' group cursor-pointer bg-white flex items-center px-3 py-3
                                    rounded-full absolute top-4 right-4'>
                                    <FaHeart className='  h-6 w-6 text-red-500 '></FaHeart>
                                      

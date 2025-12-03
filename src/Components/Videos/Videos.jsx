@@ -1,13 +1,14 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { IoMdStar } from "react-icons/io";
 import { FaHeart } from "react-icons/fa";
 import { CiClock2 } from "react-icons/ci";
 import { SlCalender } from "react-icons/sl";
 import { FaPlay } from "react-icons/fa";
-
+import { CartContext } from '../../Layout/FavoriteContext/FavoriteContext';
 const Videos = () => {
 
     const [recipes, setRecipes] = useState([]);
+    const{addtoFavorite}=useContext(CartContext);
 
 
   useEffect(() => {
@@ -43,9 +44,13 @@ const Videos = () => {
                   <p>{recipe.rating}</p>
                 </button>
 
-                <button className="bg-white flex items-center px-3 py-3 rounded-full absolute top-4 right-4">
-                  <FaHeart className="h-6 w-6 text-red-500" />
-                </button>
+               <button 
+                onClick={() => addtoFavorite(recipe)}
+                 className="bg-white cursor-pointer flex items-center px-3 py-3 rounded-full
+                  absolute top-4 right-4 z-20">
+             <FaHeart className="h-6 w-6 text-red-500" />
+          </button>
+
                  {/*  Play Icon  */}
   <div className="absolute inset-0 flex items-center justify-center">
     <div className= "bg-white/80  p-4 rounded-full transition-all duration-300 hover:scale-125">

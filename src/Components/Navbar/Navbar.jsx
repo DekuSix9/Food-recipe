@@ -59,7 +59,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <NavLink className="hover:text-emerald-600">Favorites</NavLink>
+          <NavLink to='favorites' className="hover:text-emerald-600">Favorites</NavLink>
           <NavLink className="hover:text-emerald-600">About</NavLink>
         </div>
 
@@ -123,7 +123,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <NavLink className="block hover:text-emerald-600">Favorites</NavLink>
+          <NavLink to='favorites' className="block hover:text-emerald-600">Favorites</NavLink>
           <NavLink className="block hover:text-emerald-600">About</NavLink>
 
           {/* Mobile search and login */}
