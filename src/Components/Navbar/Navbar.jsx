@@ -74,7 +74,8 @@ const Navbar = () => {
             <CiSearch className="w-5 h-5 text-gray-400 absolute left-3 top-2.5" />
           </div>
           {
-             user?<button  onClick={handleLogOut} className="bg-red-600 cursor-pointer  hover:bg-red-700 text-white font-medium px-5 py-2 rounded-full shadow-md transition duration-200">Log Out</button>
+             user?<button  onClick={handleLogOut} className="bg-red-600 cursor-pointer  hover:bg-red-700 text-white font-medium px-5 py-2 rounded-full
+              shadow-md transition duration-200">Log Out</button>
           :
           <Link to='/login'  className="bg-emerald-600 hover:bg-gray-900 text-white font-medium px-5 py-2 rounded-full shadow-md transition duration-200">
             Login

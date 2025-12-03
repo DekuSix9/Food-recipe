@@ -5,13 +5,26 @@ import { CiClock2 } from "react-icons/ci";
 import { SlCalender } from "react-icons/sl";
 import { Link } from "react-router-dom";
 import { CartContext } from '../../Layout/FavoriteContext/FavoriteContext';
+import  { AuthContext } from "../../Layout/AuthLayout/AuthLayout";
 
 const Categories = () => {
     const [recipes,setRecipes]=useState([]);
     const [displayRecipes,setDisplayRecipes]=useState([])
     const [activeCategories,setActiveCategories]=useState("all");
     const [visible,setVisible]=useState(8);
-      const{addtoFavorite}=useContext(CartContext);
+    const{addtoFavorite}=useContext(CartContext);
+    const{user}=useContext(AuthContext);
+
+
+     const handleFavorite = (recipe) => {
+    if (!user) {
+      alert("Please login first!");
+      return;
+    }
+
+    addtoFavorite(recipe); 
+  };
+   
 
     useEffect(()=>{
         fetch('recipes.json')
@@ -110,7 +123,7 @@ const Categories = () => {
                                    <IoMdStar className=' text-yellow-500 h-6 w-6'></IoMdStar>
                                      <p>{recipe.rating}</p>
                                  </button>
-                                  <button onClick={()=>addtoFavorite(recipe.id)} className=' group cursor-pointer bg-white flex items-center px-3 py-3
+                                  <button onClick={()=>handleFavorite(recipe)} className=' group cursor-pointer bg-white flex items-center px-3 py-3
                                    rounded-full absolute top-4 right-4'>
                                    <FaHeart className='  h-6 w-6 text-red-500 '></FaHeart>
                                      

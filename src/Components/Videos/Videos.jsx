@@ -5,10 +5,22 @@ import { CiClock2 } from "react-icons/ci";
 import { SlCalender } from "react-icons/sl";
 import { FaPlay } from "react-icons/fa";
 import { CartContext } from '../../Layout/FavoriteContext/FavoriteContext';
+import  { AuthContext } from "../../Layout/AuthLayout/AuthLayout";
 const Videos = () => {
 
     const [recipes, setRecipes] = useState([]);
     const{addtoFavorite}=useContext(CartContext);
+    const{user}=useContext(AuthContext);
+
+    
+  const handleFavorite = (recipe) => {
+    if (!user) {
+      alert("Please login first!");
+      return;
+    }
+
+    addtoFavorite(recipe); 
+  };
 
 
   useEffect(() => {
@@ -45,7 +57,7 @@ const Videos = () => {
                 </button>
 
                <button 
-                onClick={() => addtoFavorite(recipe)}
+                onClick={() => handleFavorite(recipe)}
                  className="bg-white cursor-pointer flex items-center px-3 py-3 rounded-full
                   absolute top-4 right-4 z-20">
              <FaHeart className="h-6 w-6 text-red-500" />

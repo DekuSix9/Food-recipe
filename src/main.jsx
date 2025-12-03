@@ -10,6 +10,7 @@ import AuthLayout from './Layout/AuthLayout/AuthLayout';
 import RecipeDetails from './Pages/RecipeDetails/RecipeDetails';
 import Favorite from './Pages/Favorite/Favorite';
 import FavoriteContext from './Layout/FavoriteContext/FavoriteContext';
+import PrivateLayout from './Layout/PrivateLayout/PrivateLayout';
 
 
 const router = createBrowserRouter([
@@ -41,7 +42,7 @@ const router = createBrowserRouter([
       },
       {
         path:'/favorites',
-        element:<Favorite></Favorite>
+        element:<PrivateLayout><Favorite></Favorite></PrivateLayout>  
       },
 
      
