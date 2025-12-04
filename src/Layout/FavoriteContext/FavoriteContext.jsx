@@ -4,10 +4,16 @@ import { createContext, useEffect, useState } from "react";
 export const CartContext=createContext()
 
 const FavoriteContext = ({children}) => {
-    const [favorites,setFavorites]=useState(()=>{
-        const storedFavorites=localStorage.getItem('favorites');
-        return storedFavorites ? JSON.parse(storedFavorites):[];
-    });
+    const [favorites, setFavorites] = useState(() => {
+    try {
+      const stored = localStorage.getItem("favorites");
+      return stored ? JSON.parse(stored) : [];
+    } catch (err) {
+      console.error("Invalid favorites JSON clearing storage",err);
+      localStorage.removeItem("favorites");
+      return [];
+    }
+  });
 
     useEffect(()=>{
 

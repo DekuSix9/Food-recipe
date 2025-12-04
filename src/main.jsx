@@ -11,6 +11,7 @@ import RecipeDetails from './Pages/RecipeDetails/RecipeDetails';
 import Favorite from './Pages/Favorite/Favorite';
 import FavoriteContext from './Layout/FavoriteContext/FavoriteContext';
 import PrivateLayout from './Layout/PrivateLayout/PrivateLayout';
+import VideoDetail from './Pages/VideoDetails/VideoDetail';
 
 
 const router = createBrowserRouter([
@@ -44,7 +45,16 @@ const router = createBrowserRouter([
         path:'/favorites',
         element:<PrivateLayout><Favorite></Favorite></PrivateLayout>  
       },
+      
+       {
+        path:'videos/:id',
+        element:<VideoDetail></VideoDetail>,
+         loader: async()=>{
+          const res=await fetch('/videos.json');
+          return res.json();
+        }
 
+       }
      
 
 

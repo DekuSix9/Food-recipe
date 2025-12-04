@@ -8,7 +8,26 @@
     "date": "2025-11-01",
     "country": "Italy",
     "category": "fast food",
-    "image": "https://images.unsplash.com/photo-1633337474564-1d9478ca4e2e?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "https://images.unsplash.com/photo-1633337474564-1d9478ca4e2e?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "details": {
+      "servings": 2,
+      "difficulty": "Easy",
+      "ingredients": [
+        "200g spaghetti",
+        "2 eggs",
+        "50g parmesan cheese",
+        "80g bacon",
+        "1 tsp black pepper",
+        "Salt"
+      ],
+      "steps": [
+        "Boil the spaghetti in salt water until al dente.",
+        "Fry the bacon until crispy.",
+        "Whisk eggs with parmesan and pepper.",
+        "Mix hot pasta with bacon.",
+        "Add egg mixture and mix until creamy."
+      ]
+    }
   },
   {
     "id": 2,
@@ -19,7 +38,27 @@
     "date": "2025-10-28",
     "country": "India",
     "category": "healthy",
-    "image": "https://plus.unsplash.com/premium_photo-1694141251673-1758913ade48?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "https://plus.unsplash.com/premium_photo-1694141251673-1758913ade48?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "details": {
+      "servings": 4,
+      "difficulty": "Hard",
+      "ingredients": [
+        "500g chicken",
+        "3 cups basmati rice",
+        "1 cup yogurt",
+        "Biryani masala",
+        "Fried onions",
+        "Ginger garlic paste",
+        "Saffron water"
+      ],
+      "steps": [
+        "Marinate chicken with yogurt and spices.",
+        "Boil rice until 70% cooked.",
+        "Layer chicken and rice alternately.",
+        "Add fried onions and saffron water.",
+        "Cook on low flame for 30 minutes."
+      ]
+    }
   },
   {
     "id": 3,
@@ -30,7 +69,25 @@
     "date": "2025-11-05",
     "country": "Japan",
     "category": "sea food",
-    "image": "https://images.unsplash.com/photo-1628676825875-031ad212c31e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "https://images.unsplash.com/photo-1628676825875-031ad212c31e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "details": {
+      "servings": 2,
+      "difficulty": "Medium",
+      "ingredients": [
+        "Nori sheets",
+        "Sushi rice",
+        "Cucumber",
+        "Crab sticks or salmon",
+        "Rice vinegar"
+      ],
+      "steps": [
+        "Prepare sushi rice with vinegar.",
+        "Place nori sheet on rolling mat.",
+        "Spread rice evenly over nori.",
+        "Add preferred fillings.",
+        "Roll tightly and slice."
+      ]
+    }
   },
   {
     "id": 4,
@@ -41,7 +98,25 @@
     "date": "2025-10-30",
     "country": "Mexico",
     "category": "fast food",
-    "image": "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "details": {
+      "servings": 3,
+      "difficulty": "Easy",
+      "ingredients": [
+        "Tortillas",
+        "Pineapple",
+        "Marinated pork",
+        "Onions",
+        "Cilantro"
+      ],
+      "steps": [
+        "Cook marinated pork in a skillet.",
+        "Warm tortillas on a pan.",
+        "Fill tortillas with pork and pineapple.",
+        "Top with onions and cilantro.",
+        "Serve with lime."
+      ]
+    }
   },
   {
     "id": 5,
@@ -52,7 +127,25 @@
     "date": "2025-11-03",
     "country": "India",
     "category": "healthy",
-    "image": "https://images.unsplash.com/photo-1728910107534-e04e261768ae?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "https://images.unsplash.com/photo-1728910107534-e04e261768ae?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "details": {
+      "servings": 4,
+      "difficulty": "Medium",
+      "ingredients": [
+        "Chicken pieces",
+        "Butter",
+        "Tomato puree",
+        "Fresh cream",
+        "Garam masala",
+        "Ginger garlic paste"
+      ],
+      "steps": [
+        "Cook chicken with spices.",
+        "Prepare buttery tomato gravy.",
+        "Add cream and simmer.",
+        "Mix cooked chicken and serve."
+      ]
+    }
   },
   {
     "id": 6,
@@ -63,7 +156,22 @@
     "date": "2025-11-06",
     "country": "Thailand",
     "category": "drink",
-    "image": "https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "details": {
+      "servings": 1,
+      "difficulty": "Easy",
+      "ingredients": [
+        "1 ripe mango",
+        "1 cup milk",
+        "Sugar or honey to taste"
+      ],
+      "steps": [
+        "Peel and chop mango.",
+        "Blend mango with milk.",
+        "Add sugar or honey.",
+        "Blend until smooth."
+      ]
+    }
   },
   {
     "id": 7,
@@ -74,7 +182,24 @@
     "date": "2025-10-29",
     "country": "France",
     "category": "desserts",
-    "image": "https://images.unsplash.com/photo-1673551490812-eaee2e9bf0ef?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "https://images.unsplash.com/photo-1673551490812-eaee2e9bf0ef?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "details": {
+      "servings": 2,
+      "difficulty": "Medium",
+      "ingredients": [
+        "Dark chocolate",
+        "Butter",
+        "Sugar",
+        "Eggs",
+        "Flour"
+      ],
+      "steps": [
+        "Melt chocolate with butter.",
+        "Whisk eggs and sugar.",
+        "Add flour and mix.",
+        "Bake until edges are set but center is molten."
+      ]
+    }
   },
   {
     "id": 8,
@@ -85,7 +210,24 @@
     "date": "2025-11-07",
     "country": "Greece",
     "category": "vegetarian",
-    "image": "https://images.unsplash.com/photo-1599021419847-d8a7a6aba5b4?q=80&w=979&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "https://images.unsplash.com/photo-1599021419847-d8a7a6aba5b4?q=80&w=979&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "details": {
+      "servings": 2,
+      "difficulty": "Easy",
+      "ingredients": [
+        "Tomatoes",
+        "Cucumbers",
+        "Olives",
+        "Onions",
+        "Feta cheese",
+        "Olive oil"
+      ],
+      "steps": [
+        "Chop all vegetables.",
+        "Add olives and feta cheese.",
+        "Drizzle with olive oil.",
+        "Toss and serve fresh."
+      ]
+    }
   }
- 
 ]
