@@ -5,6 +5,7 @@ import { LuLeafyGreen } from "react-icons/lu";
 import { RiDrinks2Line } from "react-icons/ri";
 import { LuDessert } from "react-icons/lu";
 import { PiBowlFoodBold } from "react-icons/pi";
+import { Link } from "react-router-dom";
 
 
 
@@ -36,7 +37,8 @@ const CategoryName = () => {
     <div className="max-w-11/12 mx-auto px-8">
          <div className="flex mt-12 gap-8  justify-center flex-wrap">
             {uniqueCategories.map((food) => (
-               <div
+               <Link
+               to={`/category/${food}`}
             key={food}
             className="bg-white px-5 py-4 rounded-xl shadow-md border border-gray-300
              hover:shadow-lg hover:bg-gray-100 transition cursor-pointer w-48 text-center"
@@ -51,7 +53,7 @@ const CategoryName = () => {
             <p className="text-gray-600 mt-1">
                   {recipes.filter((item) => item.category === food).length} Recipes
             </p>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

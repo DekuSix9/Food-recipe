@@ -18,10 +18,12 @@ const Home = () => {
                  <ExploreRecipes></ExploreRecipes>
                   <PromoBanner></PromoBanner>
                    <Categories></Categories>
+                  
                     <Videos></Videos>
                       <RecipeHighlights></RecipeHighlights>
                  <CategoryName></CategoryName>
                   <Journal></Journal>
+                  
                
             </main>
              

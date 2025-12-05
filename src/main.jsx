@@ -12,6 +12,8 @@ import Favorite from './Pages/Favorite/Favorite';
 import FavoriteContext from './Layout/FavoriteContext/FavoriteContext';
 import PrivateLayout from './Layout/PrivateLayout/PrivateLayout';
 import VideoDetail from './Pages/VideoDetails/VideoDetail';
+import JournalDetails from './Pages/JournalDetails/JournalDetails';
+import CategoryDetails from './Pages/CategoryDetails/CategoryDetails';
 
 
 const router = createBrowserRouter([
@@ -54,7 +56,25 @@ const router = createBrowserRouter([
           return res.json();
         }
 
-       }
+       },
+       {
+        path:'journal/:id',
+        element:<JournalDetails></JournalDetails>,
+        loader:async()=>{
+          const res=await fetch('/journal.json');
+          return res.json();
+        }
+       },
+       {
+  path: "/category/:category",
+  element:<CategoryDetails></CategoryDetails>,
+  loader: async() =>{
+       const res=await fetch("/recipes.json");
+       return res.json();
+ 
+  } 
+}
+
      
 
 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { IoMdStar } from "react-icons/io";
 import { CiClock2 } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 
 
@@ -31,13 +31,16 @@ const Journal = () => {
                    <div key={news.id} className="overflow-hidden bg-white">
                      {/* Image */}
                      <div className="relative">
+                      <Link to={`journal/${news.id}`}>
                        <img
                          src={news.photo}
                          className="w-full h-80 object-cover rounded-2xl"
                        />
+                      </Link>
+                      
        
-                       <button className=" bg-red-500  
-                        px-3 py-1 text-white font-semibold rounded-lg absolute top-4 left-4">
+                       <button className=" bg-red-500  px-3 py-1 text-white
+                        font-semibold rounded-lg absolute top-4 left-4">
                         
                          <p>{news.category}</p>
                        </button>     

@@ -12,7 +12,7 @@ const RecipeDetails = () => {
              <div className=" relative">
               {/* bg color */}
                <div className="absolute top-0 left-0 w-full h-[30%] bg-gray-100 -z-10"></div>
-
+             
                      {/* main content */}
                      <div className=" max-w-11/12 mx-auto px-8 py-12 font-poppins">
           <div className=" grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">

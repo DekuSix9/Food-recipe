@@ -1,36 +1,41 @@
 [
- 
- 
   {
     "id": 1,
     "photo": "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?q=80&w=1200&auto=format&fit=crop",
     "title": "5 Desserts You Can Make with Only 3 Ingredients",
     "author": "Laura Bennett",
+    "authorImage": "https://randomuser.me/api/portraits/women/44.jpg",
+    "aboutAuthor": "Laura Bennett is a passionate home baker who loves experimenting with simple yet delicious desserts. She shares her creative recipes and tips to make baking easy and fun for everyone.",
     "readingTime": "3 min read",
     "postDate": "2024-10-18",
     "postedAgo": "4 months ago",
-    "category": "Desserts"
+    "category": "Desserts",
+    "blog": "Great recipes begin with inspiration, and every dish tells a story waiting to be shared. Whether you’re exploring new flavors, mastering techniques, or learning about unique ingredients, there’s always something exciting to discover in the kitchen. Our blog is designed to fuel your culinary creativity, offering fresh ideas, practical tips, and in-depth insights to make your time in the kitchen more enjoyable and fulfilling. From finding the perfect balance of spices to discovering the health benefits of certain ingredients, we aim to help you cook confidently and joyfully. No matter your skill level, whether you’re a beginner trying your hand at simple meals or an experienced cook seeking new challenges, you’ll find something valuable here. Let every recipe be an opportunity to learn, grow, and, most importantly, enjoy the process of creating delicious, memorable food for yourself and others."
   },
   {
     "id": 2,
     "photo": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?q=80&w=1200&auto=format&fit=crop",
     "title": "Why Homemade Burgers Taste Better Than Store",
     "author": "Mike Johnson",
+    "authorImage": "https://randomuser.me/api/portraits/men/32.jpg",
+    "aboutAuthor": "Mike Johnson is a culinary enthusiast and foodie who specializes in comfort foods. He loves sharing his knowledge on making classic dishes at home that are healthier and tastier than store-bought options.",
     "readingTime": "5 min read",
     "postDate": "2025-01-28",
     "postedAgo": "2 weeks ago",
-    "category": "Fast Food"
+    "category": "Fast Food",
+    "blog": "Discover the secrets behind the perfect homemade burger. From selecting the freshest ingredients to mastering cooking techniques, our blog explores how to achieve mouthwatering flavor and texture that store-bought burgers simply can't match. Learn tips on seasoning, patty preparation, cooking methods, and creative toppings to elevate your burger game and impress family and friends with each bite."
   },
- 
   {
     "id": 3,
     "photo": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?q=80&w=1200&auto=format&fit=crop",
     "title": "Refreshing Fruit Drinks for Summer Days",
     "author": "Daniel Carter",
+    "authorImage": "https://randomuser.me/api/portraits/men/54.jpg",
+    "aboutAuthor": "Daniel Carter is a nutritionist and beverage expert who loves creating healthy and delicious drinks. He focuses on natural ingredients and innovative recipes to keep you refreshed and energized.",
     "readingTime": "4 min read",
     "postDate": "2025-01-30",
     "postedAgo": "2 weeks ago",
-    "category": "Drinks"
+    "category": "Drinks",
+    "blog": "Beat the summer heat with refreshing fruit drinks. Our blog covers easy-to-make recipes using fresh fruits, natural sweeteners, and creative flavor combinations. Learn how to prepare smoothies, mocktails, and infused waters that are not only delicious but also packed with nutrients. Perfect for staying hydrated and enjoying the vibrant taste of summer fruits every day."
   }
- 
 ]

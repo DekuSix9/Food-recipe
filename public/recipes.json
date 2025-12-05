@@ -8,6 +8,7 @@
     "date": "2025-11-01",
     "country": "Italy",
     "category": "Fast food",
+    "categoryDescription": "Delicious fast foods for quick meals. Enjoy tasty treats without compromising flavor.",
     "image": "https://images.unsplash.com/photo-1633337474564-1d9478ca4e2e?q=80&w=1171&auto=format&fit=crop",
     "details": {
       "servings": 2,
@@ -38,6 +39,7 @@
     "date": "2025-10-28",
     "country": "India",
     "category": "Healthy",
+    "categoryDescription": "Stay balanced with nutritious recipes using wholesome ingredients. From salads to healthy mains, enjoy flavorful dishes that are good for your body and mind.",
     "image": "https://plus.unsplash.com/premium_photo-1694141251673-1758913ade48?q=80&w=1169&auto=format&fit=crop",
     "details": {
       "servings": 4,
@@ -69,6 +71,7 @@
     "date": "2025-11-05",
     "country": "Japan",
     "category": "Sea food",
+    "categoryDescription": "Fresh seafood recipes full of flavor and nutrition. Perfect for light, protein-rich meals.",
     "image": "https://images.unsplash.com/photo-1628676825875-031ad212c31e?q=80&w=687&auto=format&fit=crop",
     "details": {
       "servings": 2,
@@ -98,6 +101,7 @@
     "date": "2025-10-30",
     "country": "Mexico",
     "category": "Fast food",
+    "categoryDescription": "Delicious fast foods for quick meals. Enjoy tasty treats without compromising flavor.",
     "image": "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?q=80&w=1171&auto=format&fit=crop",
     "details": {
       "servings": 3,
@@ -126,6 +130,7 @@
     "date": "2025-11-03",
     "country": "India",
     "category": "Healthy",
+    "categoryDescription": "Stay balanced with nutritious recipes using wholesome ingredients. From salads to healthy mains, enjoy flavorful dishes that are good for your body and mind.",
     "image": "https://images.unsplash.com/photo-1728910107534-e04e261768ae?q=80&w=880&auto=format&fit=crop",
     "details": {
       "servings": 4,
@@ -155,6 +160,7 @@
     "date": "2025-11-06",
     "country": "Thailand",
     "category": "Drink",
+    "categoryDescription": "Cool and refreshing drinks to hydrate and energize you throughout the day.",
     "image": "https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?q=80&w=687&auto=format&fit=crop",
     "details": {
       "servings": 1,
@@ -180,6 +186,7 @@
     "date": "2025-10-29",
     "country": "France",
     "category": "Desserts",
+    "categoryDescription": "Indulgent desserts to satisfy your sweet cravings, perfect for special treats.",
     "image": "https://images.unsplash.com/photo-1673551490812-eaee2e9bf0ef?q=80&w=1170&auto=format&fit=crop",
     "details": {
       "servings": 2,
@@ -208,6 +215,7 @@
     "date": "2025-11-07",
     "country": "Greece",
     "category": "Vegetarian",
+    "categoryDescription": "Nutritious vegetarian meals with fresh vegetables and wholesome ingredients.",
     "image": "https://images.unsplash.com/photo-1599021419847-d8a7a6aba5b4?q=80&w=979&auto=format&fit=crop",
     "details": {
       "servings": 2,
@@ -236,6 +244,7 @@
     "date": "2025-10-31",
     "country": "Norway",
     "category": "Sea food",
+    "categoryDescription": "Fresh seafood recipes full of flavor and nutrition. Perfect for light, protein-rich meals.",
     "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=1170&auto=format&fit=crop",
     "details": {
       "servings": 2,
@@ -263,6 +272,7 @@
     "date": "2025-11-04",
     "country": "USA",
     "category": "Vegetarian",
+    "categoryDescription": "Nutritious vegetarian meals with fresh vegetables and wholesome ingredients.",
     "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?q=80&w=1172&auto=format&fit=crop",
     "details": {
       "servings": 2,
