@@ -21,6 +21,15 @@ const Navbar = () => {
     })
   }
 
+  const categories = [
+  "Desserts",
+  "Drink",
+  "Fast food",
+  "Healthy",
+  "Sea food",
+  "Vegetarian"
+];
+
   return (
     <nav className="   sticky top-0 z-50 bg-white  ">
       <div className=" px-4 py-4 md:px-8 w-11/12 mx-auto">
@@ -49,12 +58,11 @@ const Navbar = () => {
               tabIndex="-1"
               className="dropdown-content menu bg-base-100 rounded-box z-10 w-52 p-2 shadow-md"
             >
-              <li className="hover:bg-emerald-300"><a>Desserts</a></li>
-               <li className="hover:bg-emerald-300"><a>Drinks</a></li>
-           <li className="hover:bg-emerald-300"><a>Fast Food</a></li>
-          <li className="hover:bg-emerald-300"><a>Healthy</a></li>
-          <li className="hover:bg-emerald-300"><a>Seafood</a></li>
-           <li className="hover:bg-emerald-300"><a>Vegetarian</a></li>
+               {categories.map((category) => (
+                  <li key={category} className="hover:bg-emerald-300">
+                    <Link to={`/category/${category}`}>{category}</Link>
+                  </li>
+                ))}
 
             </ul>
           </div>
@@ -114,12 +122,11 @@ const Navbar = () => {
               tabIndex="-1"
               className="dropdown-content menu bg-base-100 rounded-box z-10 w-full p-2 shadow-md"
             >
-               <li className="hover:bg-emerald-300"><a>Desserts</a></li>
-            <li className="hover:bg-emerald-300"><a>Drinks</a></li>
-            <li className="hover:bg-emerald-300"><a>Fast Food</a></li>
-            <li className="hover:bg-emerald-300"><a>Healthy</a></li>
-          <li className="hover:bg-emerald-300"><a>Seafood</a></li>
-            <li className="hover:bg-emerald-300"><a>Vegetarian</a></li>
+                 {categories.map((category) => (
+                  <li key={category} className="hover:bg-emerald-300">
+                    <Link to={`/category/${category}`}>{category}</Link>
+                  </li>
+                ))}
 
             </ul>
           </div>
