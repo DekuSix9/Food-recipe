@@ -6,6 +6,7 @@ import { SlCalender } from "react-icons/sl";
 import { Link } from "react-router-dom";
 import { CartContext } from '../../Layout/FavoriteContext/FavoriteContext';
 import  { AuthContext } from "../../Layout/AuthLayout/AuthLayout";
+import Swal from "sweetalert2";
 
 const Categories = () => {
     const [recipes,setRecipes]=useState([]);
@@ -18,7 +19,8 @@ const Categories = () => {
 
      const handleFavorite = (recipe) => {
     if (!user) {
-      alert("Please login first!");
+     Swal.fire("Please Login First to add favotite recipe");
+      
       return;
     }
 

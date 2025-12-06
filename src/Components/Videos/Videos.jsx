@@ -7,6 +7,7 @@ import { FaPlay } from "react-icons/fa";
 import { CartContext } from '../../Layout/FavoriteContext/FavoriteContext';
 import  { AuthContext } from "../../Layout/AuthLayout/AuthLayout";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 
 const Videos = () => {
@@ -18,7 +19,7 @@ const Videos = () => {
     
   const handleFavorite = (recipe) => {
     if (!user) {
-      alert("Please login first!");
+     Swal.fire("Please Login First to add favotite recipe");
       return;
     }
 
@@ -46,63 +47,61 @@ const Videos = () => {
         {/* Recipes Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-16 gap-4 gap-y-8">
           {videos.map((video) => (
-            <div key={video.id} className="overflow-hidden bg-white">
-              {/* Image */}
-             <Link to={`/videos/${video.id}`} className="relative block cursor-pointer">
-               <img
-                src={video.image}
-              className="w-full h-80 object-cover rounded-2xl"
-               />
+           <div key={video.id} className="overflow-hidden bg-white relative">
 
-             {/* Play Icon */}
-            <div className="absolute inset-0 flex items-center justify-center">
-           <div className="bg-white/80 p-4 rounded-full transition-all duration-300 hover:scale-125">
-            <FaPlay className="text-red-500 w-8 h-8" />
-              </div>
-                 </div>
+     {/* CLICK Go to details */}
+     <Link to={`/videos/${video.id}`} className="block cursor-pointer">
+     <img
+      src={video.image}
+      className="w-full h-80 object-cover rounded-2xl"
+     />
 
-                 {/* Rating */}
-                  <button className="bg-white flex items-center gap-1 px-2 py-1 rounded-full absolute top-4 left-4">
-                    <IoMdStar className="text-yellow-500 h-6 w-6" />
-                 <p>{video.rating}</p>
-                  </button>
+      {/* Play Icon */}
+     <div className="absolute inset-0 flex items-center justify-center">
+      <div className="bg-white/80 p-4 rounded-full transition-all duration-300 hover:scale-125">
+        <FaPlay className="text-red-500 w-8 h-8" />
+      </div>
+    </div>
 
-                  {/* Favorite */}
-                     <button
-                     onClick={() => {
-                       handleFavorite(video);
-                         }}
-                   className="bg-white cursor-pointer flex items-center px-3 py-3 rounded-full absolute top-4 right-4 z-20"
-                >
-            <FaHeart className="h-6 w-6 text-red-500" />
-               </button>
-          </Link>
+    {/* Rating */}
+    <button className="bg-white flex items-center gap-1 px-2 py-1 rounded-full absolute top-4 left-4 z-20">
+      <IoMdStar className="text-yellow-500 h-6 w-6" />
+      <p>{video.rating}</p>
+    </button>
+  </Link>
 
+  {/*  Favorite */}
+  <button
+    onClick={() => handleFavorite(video)}
+    className="bg-white cursor-pointer flex items-center px-3 py-3 rounded-full absolute top-4 right-4 z-30"
+  >
+    <FaHeart className="h-6 w-6 text-red-500" />
+  </button>
 
-              {/* Details */}
-              <div>
-                <h2 className="mt-4 font-semibold text-red-500">{video.foodName}</h2>
-                <h1 className="mt-2 text-xl font-bold hover:text-red-500">
-                  {video.title}
-                </h1>
+  {/* Details */}
+  <div>
+    <h2 className="mt-4 font-semibold text-red-500">{video.foodName}</h2>
+    <h1 className="mt-2 text-xl font-bold hover:text-red-500">{video.title}</h1>
 
-                <div className="flex gap-4 mt-1 text-gray-500">
-                  <div className="flex items-center gap-1">
-                    <CiClock2 />
-                    <p className="hover:text-red-500">{video.duration}</p>
-                  </div>
+    <div className="flex gap-4 mt-1 text-gray-500">
+      <div className="flex items-center gap-1">
+        <CiClock2 />
+        <p className="hover:text-red-500">{video.duration}</p>
+      </div>
 
-                  <div className="flex items-center gap-1">
-                    <p className="hover:text-red-500">{video.country}</p>
-                  </div>
+      <div className="flex items-center gap-1">
+        <p className="hover:text-red-500">{video.country}</p>
+      </div>
 
-                  <div className="flex items-center gap-1">
-                    <SlCalender />
-                    <p className="hover:text-red-500">{video.date}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div className="flex items-center gap-1">
+        <SlCalender />
+        <p className="hover:text-red-500">{video.date}</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
           ))}
         </div>
 
