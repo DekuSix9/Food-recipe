@@ -43,7 +43,7 @@ const Navbar = () => {
         {/* Desktop links */}
         <div className="hidden md:flex items-center space-x-4 font-semibold text-gray-700">
           <NavLink className="hover:text-emerald-600">Home</NavLink>
-          <NavLink className="hover:text-emerald-600">Recipes</NavLink>
+          <NavLink to='/recipes' className="hover:text-emerald-600">Recipes</NavLink>
 
           <div className="dropdown dropdown-hover">
             <div
@@ -68,7 +68,7 @@ const Navbar = () => {
           </div>
 
           <NavLink to='favorites' className="hover:text-emerald-600">Favorites</NavLink>
-          <NavLink className="hover:text-emerald-600">About</NavLink>
+          <NavLink to='/contact' className="hover:text-emerald-600">Contact</NavLink>
         </div>
 
         {/* Desktop search and login */}
@@ -106,7 +106,7 @@ const Navbar = () => {
         <div className="md:hidden bg-white border-t border-gray-200 mt-3 rounded-lg p-4 space-y-3 font-semibold text-gray-700 shadow-sm">
 
           <NavLink className="block hover:text-emerald-600">Home</NavLink>
-          <NavLink className="block hover:text-emerald-600">Recipes</NavLink>
+          <NavLink  to='/recipes' className="block hover:text-emerald-600">Recipes</NavLink>
 
          
           <div className="dropdown dropdown-bottom w-full">
@@ -132,7 +132,7 @@ const Navbar = () => {
           </div>
 
           <NavLink to='favorites' className="block hover:text-emerald-600">Favorites</NavLink>
-          <NavLink className="block hover:text-emerald-600">About</NavLink>
+          <NavLink to='/contact' className="block hover:text-emerald-600">Contact</NavLink>
 
           {/* Mobile search and login */}
           <div className="pt-3 flex flex-col gap-3">

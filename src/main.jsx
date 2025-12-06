@@ -14,6 +14,8 @@ import PrivateLayout from './Layout/PrivateLayout/PrivateLayout';
 import VideoDetail from './Pages/VideoDetails/VideoDetail';
 import JournalDetails from './Pages/JournalDetails/JournalDetails';
 import CategoryDetails from './Pages/CategoryDetails/CategoryDetails';
+import Recipes from './Pages/Recipes/Recipes';
+import ContactUs from './Pages/ContactUs/ContactUs';
 
 
 const router = createBrowserRouter([
@@ -34,6 +36,15 @@ const router = createBrowserRouter([
         path:'register',
         element:<Register></Register>
 
+      },
+      {
+        path:'/recipes',
+        element:<Recipes></Recipes>
+
+      },
+      {
+        path:'/contact',
+        element:<ContactUs></ContactUs>
       },
       {
         path:'recipes/:id',
