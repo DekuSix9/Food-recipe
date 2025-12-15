@@ -93,10 +93,9 @@ const Navbar = () => {
            </div>
 
         {/* Mobile menu button */}
-        <button
+           <button
              onClick={() => setMenuOpen(!menuOpen)}
-           className="md:hidden text-3xl text-gray-700 focus:outline-none"
-        >
+           className="md:hidden text-3xl text-gray-700  focus:outline-none">
           {menuOpen ? <IoClose /> : <RxHamburgerMenu />}
         </button>
              </div>
