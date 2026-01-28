@@ -12,7 +12,7 @@ const JournalDetails = () => {
     const data=useLoaderData();
     const JournalDetails=data.find(journal=>journal.id===journalId)
     return (
-        <div className=" max-w-11/12 mx-auto px-8 py-12 font-poppins">
+        <div className=" max-w-11/12 mx-auto  py-4 md:py-8 font-poppins">
              <div className=" grid grid-cols-1 md:grid-cols-[70%_30%] gap-8" >
 
             {/* left side content */}
@@ -23,9 +23,9 @@ const JournalDetails = () => {
                         font-semibold rounded-lg ">
                 {JournalDetails.category}
                </button>
-                <h1 className=" text-2xl md:text-4xl font-bold mb-4 mt-4">{JournalDetails.title}</h1>
-                  <div className="flex flex-wrap gap-4 md:gap-12 mt-1 items-center
-                   text-gray-500 mb-8">
+                <h1 className=" text-2xl md:text-4xl font-bold mt-2 md:mt-4">{JournalDetails.title}</h1>
+                  <div className="flex flex-wrap gap-4   items-center
+                   text-gray-500 mb-2 md:mb-4">
                     <p className="hover:text-red-500 text-black">
                        {JournalDetails.author}
                     </p>
@@ -51,12 +51,12 @@ const JournalDetails = () => {
              {/* image & text content */}
              <div>
                 <img className="w-full h-80 md:h-[450px] object-cover rounded-2xl" src={JournalDetails.photo}></img>
-                <h2 className=" mt-4 text-lg">{JournalDetails.blog}</h2>
+                <h2 className=" mt-2 md:mt-4 text-lg">{JournalDetails.blog}</h2>
              </div>
             </div>
 
             {/* right side content */}
-            <div className="flex flex-col  p-6 rounded-2xl  items-center justify-center  gap-2">
+            <div className="flex flex-col   rounded-2xl  items-center justify-center  gap-2">
 
              {/* Author Image */}
              <div className="w-full flex justify-center">

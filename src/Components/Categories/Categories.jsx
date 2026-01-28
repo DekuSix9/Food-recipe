@@ -44,18 +44,18 @@ const Categories = () => {
                                };
 
   return (
-    <div className="max-w-11/12 mx-auto px-4 md:px-8">
-      <div className="mt-24">
+    <div className="max-w-11/12 mx-auto ">
+      <div className=" mt-12 md:mt-24">
         {/* Title */}
         <div className="text-center">
-          <h1 className="text-3xl md:text-5xl font-bold">New Recipes</h1>
-          <p className="mt-2 text-sm md:text-lg">
+          <h1 className="text-2xl md:text-5xl font-bold">New Recipes</h1>
+          <p className="mt-2 ">
             Explore our latest recipes, from quick snacks to hearty meals.
           </p>
         </div>
 
         {/* Category Buttons */}
-        <div className="flex flex-wrap justify-center gap-4 mt-10">
+        <div className="flex flex-wrap justify-center gap-4 mt-6 md:mt-10">
           {uniqueCategories.map(category => (
             <button
               key={category}
@@ -76,7 +76,7 @@ const Categories = () => {
         </div>
 
         {/* Recipes Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-12 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8 md:mt-12 gap-6">
           {filteredRecipes.slice(0, visible).map(recipe => (
             <div key={recipe.id} className="bg-white overflow-hidden">
               {/* Image */}
@@ -84,12 +84,12 @@ const Categories = () => {
                 <Link to={`recipes/${recipe.id}`}>
                   <img
                     src={recipe.image}
-                    className="w-full h-80 object-cover rounded-2xl"
+                    className="w-full h-68 md:h-80 object-cover rounded-2xl"
                   />
                 </Link>
 
                 <span className="absolute top-4 left-4 bg-white px-2 py-1 rounded-full flex items-center gap-1">
-                  <IoMdStar className="text-yellow-500" />
+                  <IoMdStar className="text-yellow-500 w-6 h-6" />
                   {recipe.rating}
                 </span>
 
@@ -97,12 +97,12 @@ const Categories = () => {
                   onClick={() => handleFavorite(recipe)}
                   className="absolute top-4 right-4 bg-white p-3 rounded-full"
                 >
-                  <FaHeart className="text-red-500" />
+                  <FaHeart className="text-red-500 w-6 h-6" />
                 </button>
               </div>
 
               {/* Details */}
-              <div className="mt-4">
+              <div className=" mt-2 md:mt-4">
                 <h3 className="font-semibold text-red-500">
                   {recipe.foodName}
                 </h3>
@@ -110,7 +110,7 @@ const Categories = () => {
                   {recipe.title}
                 </h2>
 
-                <div className="flex gap-4 mt-2 text-gray-500 text-sm">
+                <div className="flex gap-4  text-gray-500 text-sm">
                   <div className="flex items-center gap-1">
                     <CiClock2 />
                     {recipe.duration}
@@ -128,7 +128,7 @@ const Categories = () => {
 
         {/* See More */}
         {visible < filteredRecipes.length && (
-          <div className="flex justify-center mt-12">
+          <div className="flex justify-center mt-8 md:mt-12">
             <button
               onClick={handleSeeMore}
               className="px-5 py-2 border rounded-lg font-bold hover:bg-emerald-600 hover:text-white"

@@ -35,17 +35,17 @@ const Videos = () => {
 
  
     return (
-        <div className="max-w-11/12 mx-auto px-8">
-      <div className="mt-24">
+        <div className="max-w-11/12 mx-auto ">
+      <div className=" mt-12 md:mt-24">
         <div className=" text-center">
-          <h1 className="text-5xl font-bold">Video Recipes</h1>
-          <p className="mt-2 text-lg">
+          <h1 className=" text-2xl md:text-5xl font-bold">Video Recipes</h1>
+          <p className="mt-2 md:text-lg">
            Watch our latest recipe videos and learn step-by-step cooking tips and techniques!
           </p>
         </div>
 
         {/* Recipes Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-16 gap-4 gap-y-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8 md:mt-16 gap-4 gap-y-8">
           {videos.map((video) => (
            <div key={video.id} className="overflow-hidden bg-white relative">
 
@@ -53,7 +53,7 @@ const Videos = () => {
      <Link to={`/videos/${video.id}`} className="block cursor-pointer">
      <img
       src={video.image}
-      className="w-full h-80 object-cover rounded-2xl"
+      className="w-full h-68 md:h-80 object-cover rounded-2xl"
      />
 
       {/* Play Icon */}
@@ -80,10 +80,10 @@ const Videos = () => {
 
   {/* Details */}
   <div>
-    <h2 className="mt-4 font-semibold text-red-500">{video.foodName}</h2>
-    <h1 className="mt-2 text-xl font-bold hover:text-red-500">{video.title}</h1>
+    <h2 className=" mt-2 md:mt-4 font-semibold text-red-500">{video.foodName}</h2>
+    <h1 className=" text-xl font-bold hover:text-red-500">{video.title}</h1>
 
-    <div className="flex gap-4 mt-1 text-gray-500">
+    <div className="flex gap-4  text-gray-500">
       <div className="flex items-center gap-1">
         <CiClock2 />
         <p className="hover:text-red-500">{video.duration}</p>

@@ -8,16 +8,16 @@ const Footer = () => {
 
    
     return (
-        <footer className=" bg-gray-100 mt-22">
-            <div className=" flex flex-col items-center justify-center py-12">
+        <footer className=" bg-gray-100 mt-12 md:mt-20">
+            <div className=" flex flex-col items-center justify-center py-8 md:py-12">
                 {/* title and text */}
                 <div className=" text-center">
-               <h1 className=" text-3xl md:text-4xl font-bold">Explore Our Recipes</h1>
-               <p className=" mt-2 text-gray-700 text-sm md:text-base">From quick meals to healthy dishes,
+               <h1 className=" text-2xl md:text-4xl font-bold">Explore Our Recipes</h1>
+               <p className=" mt-2 text-gray-700  text-center">From quick meals to healthy dishes,
                  our popular tags make it easy to explore delicious options with one click.</p>
                 </div>
 
-                <div className=" flex mt-8 gap-12 items-center flex-wrap justify-center ">
+                <div className=" flex mt-4 md:mt-8 gap-12 items-center flex-wrap justify-center ">
                     {/* social icons */}
                     <div className="  flex gap-3 justify-center items-center ">
                        <button className="bg-gray-200 rounded-full p-2 hover:bg-gray-300 transition">
@@ -35,7 +35,7 @@ const Footer = () => {
                     </div>
 
                     {/* link items */}
-                    <div className=" flex items-center gap-3 md:gap-4 mt-4 md:mt-0 flex-wrap">
+                    <div className=" flex items-center gap-2 md:gap-4 justify-center  text-center flex-wrap">
                       <button className="bg-gray-200 rounded-full 
                       px-4 py-2 hover:text-red-600 font-bold ">
                          All Recipes

@@ -2,9 +2,6 @@ import { useEffect, useState } from "react";
 import { CiClock2 } from "react-icons/ci";
 import { Link } from "react-router-dom";
 
-
-
-
 const Journal = () => {
     const [journal,setJournal]=useState([]);
 
@@ -16,11 +13,11 @@ const Journal = () => {
     },[])
 
     return (
-         <div className="max-w-11/12 mx-auto px-8">
-             <div className="mt-24">
+         <div className="max-w-11/12 mx-auto ">
+             <div className=" mt-12 md:mt-24">
                <div className="flex items-center justify-center flex-col">
-                 <h1 className="text-5xl font-bold">Our Journal</h1>
-                 <p className="mt-2 text-lg">
+                 <h1 className=" text-2xl md:text-5xl font-bold">Our Journal</h1>
+                 <p className="mt-2 md:text-lg text-center">
                   Discover stories, tips, and trends to inspire your culinary journey and creativity!
                  </p>
                </div>
@@ -34,7 +31,7 @@ const Journal = () => {
                       <Link to={`journal/${news.id}`}>
                        <img
                          src={news.photo}
-                         className="w-full h-80 object-cover rounded-2xl"
+                         className="w-full h-68 md:h-80 object-cover rounded-2xl"
                        />
                       </Link>
                       
@@ -54,7 +51,7 @@ const Journal = () => {
                          {news.title}
                        </h1>
        
-                       <div className="flex gap-4 mt-2 text-gray-500">
+                       <div className="flex gap-4  text-gray-500">
                          <div className="flex items-center gap-1">
                           
                            <p className="hover:text-red-500">{news.author}</p>

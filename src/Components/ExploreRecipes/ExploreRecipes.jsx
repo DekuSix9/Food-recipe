@@ -1,218 +1,152 @@
-import { useContext, useEffect, useState } from 'react';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
+import { useContext, useEffect, useState } from "react";
 import { IoMdStar } from "react-icons/io";
 import { FaHeart } from "react-icons/fa";
 import { CiClock2 } from "react-icons/ci";
 import { SlCalender } from "react-icons/sl";
-import { Link } from 'react-router-dom';
-import { CartContext } from '../../Layout/FavoriteContext/FavoriteContext';
-import  { AuthContext } from "../../Layout/AuthLayout/AuthLayout";
+import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
-
+import { CartContext } from "../../Layout/FavoriteContext/FavoriteContext";
+import { AuthContext } from "../../Layout/AuthLayout/AuthLayout";
 
 const ExploreRecipes = () => {
-  const[recipes,setRecipe]=useState([]);
-  const{addtoFavorite}=useContext(CartContext);
-  const{user}=useContext(AuthContext);
+  const [recipes, setRecipes] = useState([]);
+  const [activeTab, setActiveTab] = useState("latest");
 
-     const handleFavorite = (recipe) => {
+  const { addtoFavorite } = useContext(CartContext);
+  const { user } = useContext(AuthContext);
+
+  // fetch data
+  useEffect(() => {
+    fetch("recipes.json")
+      .then(res => res.json())
+      .then(data => setRecipes(data));
+  }, []);
+
+  // favorite handler
+  const handleFavorite = (recipe) => {
     if (!user) {
-       Swal.fire("Please Login First to add favotite recipe");
+      Swal.fire("Please Login First to add favorite recipe");
       return;
     }
-
-    addtoFavorite(recipe); 
+    addtoFavorite(recipe);
   };
-   
-  useEffect(()=>{
-    fetch('recipes.json')
-    .then(res=>res.json())
-    .then(data=>setRecipe(data))
-  },[])
-         // sorting
-   const latestRecipes=[...recipes].sort((a,b)=>new Date(b.date)-new Date(a.date)).slice(0,5);
-    const topRatedRecipes=[...recipes].sort((a,b)=>parseFloat(b.rating)-parseFloat(a.rating)).slice(0,5);
-    const fastestRecipes =[...recipes].sort((a,b)=>parseInt(a.duration)-parseInt(b.duration)).slice(0,5);
 
+  // sorting
+  const latestRecipes = [...recipes]
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .slice(0, 4);
 
+  const topRatedRecipes = [...recipes]
+    .sort((a, b) => parseFloat(b.rating) - parseFloat(a.rating))
+    .slice(0, 4);
 
-    return (
-        <div className=' px-3 py-12'>
-            <Tabs>
-    <TabList className=' flex gap-8 items-center justify-center border-b border-gray-200 '>
-      <Tab className="text-xl font-semibold text-gray-400 pb-2 cursor-pointer"
-         selectedClassName='font-semibold text-gray-800  '
-      >Latest Recipes
-      </Tab>
-      <Tab className="text-xl font-semibold text-gray-400 pb-2 cursor-pointer"
-       selectedClassName='font-semibold text-gray-800 '
-      >Top Rated Recipes
-        </Tab>
-       <Tab className="text-xl font-semibold text-gray-400 pb-2 cursor-pointer"
-          selectedClassName='font-semibold text-gray-800 '
-       >Fastest Recipes</Tab>
-      
-    </TabList>
-    {/* latestRecipes */}
-   <TabPanel >
-    {/* card */}
-      <div className='grid grid-cols-1  md:grid-cols-3 lg:grid-cols-5 gap-5 my-10'>
-         {
-    latestRecipes.map(recipe=>(
-      
-      <div key={recipe.id} className=" overflow-hidden  bg-white">
-        {/* image section */}
-        <div className='  relative'  >
-          <Link to={`recipes/${recipe.id}`}>
-             <img src={recipe.image} className="w-full h-80 object-cover rounded-2xl" >
-          </img>
-          </Link>
-         
-         <button className=' bg-white flex items-center gap-1 px-2 py-1 rounded-full absolute top-4 left-4'>
-           <IoMdStar className=' text-yellow-500 h-6 w-6'></IoMdStar>
-             <p>{recipe.rating}</p>
-         </button>
-          <button onClick={()=>handleFavorite(recipe)} className=' group cursor-pointer bg-white flex items-center px-3 py-3
-           rounded-full absolute top-4 right-4'>
-           <FaHeart className='  h-6 w-6 text-red-500 '></FaHeart>
-             
-         </button>
-        
-        </div>
-      {/* details section */}
-        <div>
-           <h2 className=' mt-4  font-semibold text-red-500 '>{recipe.foodName}</h2>
-           <h1 className=' mt-2 text-xl font-bold hover:text-red-500'>{recipe.title}</h1>
-           <div className=' flex gap-4 mt-4 text-gray-500'>
-            <div className=' flex items-center gap-1 '>
-              <CiClock2></CiClock2>
-             <p className=' hover:text-red-500'>{recipe.duration}</p>
-            </div>
-            <div className=' flex items-center gap-1'>
-              <p className=' hover:text-red-500'>{recipe.country}</p>
-            </div> 
-            <div className=' flex items-center gap-1'>
-              <SlCalender></SlCalender>
-               <p className=' hover:text-red-500'>{recipe.date}</p>
-            </div>
+  const fastestRecipes = [...recipes]
+    .sort((a, b) => parseInt(a.duration) - parseInt(b.duration))
+    .slice(0, 4);
 
-             </div>
+  const displayedRecipes =
+    activeTab === "latest"
+      ? latestRecipes
+      : activeTab === "top"
+      ? topRatedRecipes
+      : fastestRecipes;
 
-        </div>
-</div>
-    ))
-  }
-   </div>
- </TabPanel>
+  return (
+    <div className="px-3 py-6 md:py-12">
 
- {/* TopRatedRecipe */}
-    <TabPanel >
-    {/* card */}
-      <div className='grid grid-cols-1  md:grid-cols-3 lg:grid-cols-5 gap-5 my-12'>
-         {
-    topRatedRecipes.map(recipe=>(
-      
-      <div key={recipe.id} className=" overflow-hidden  bg-white">
-        {/* image section */}
-        <div className='  relative'  >
-
-           <Link to={`recipes/${recipe.id}`}>
-             <img src={recipe.image} className="w-full h-80 object-cover rounded-2xl" >
-          </img>
-          </Link>
-         <button className=' bg-white flex items-center gap-1 px-2 py-1 rounded-full absolute top-4 left-4'>
-           <IoMdStar className=' text-yellow-500 h-6 w-6'></IoMdStar>
-             <p>{recipe.rating}</p>
-         </button>
-          <button onClick={()=>handleFavorite(recipe)} className=' group cursor-pointer bg-white flex items-center px-3 py-3
-           rounded-full absolute top-4 right-4'>
-           <FaHeart className='  h-6 w-6 text-red-500 '></FaHeart>
-             
-         </button>
-        
-        </div>
-      {/* details section */}
-        <div>
-           <h2 className=' mt-4  font-semibold text-red-500 '>{recipe.foodName}</h2>
-           <h1 className=' mt-2 text-xl font-bold hover:text-red-500'>{recipe.title}</h1>
-           <div className=' flex gap-4 mt-4 text-gray-500'>
-            <div className=' flex items-center gap-1 '>
-              <CiClock2></CiClock2>
-             <p className=' hover:text-red-500'>{recipe.duration}</p>
-            </div>
-            <div className=' flex items-center gap-1'>
-              <p className=' hover:text-red-500'>{recipe.country}</p>
-            </div> 
-            <div className=' flex items-center gap-1'>
-              <SlCalender></SlCalender>
-               <p className=' hover:text-red-500'>{recipe.date}</p>
-            </div>
-
-             </div>
-
-        </div>
-</div>
-    ))
-  } </div>
- </TabPanel>
      
-     {/* Fastest Recipes */}
-    <TabPanel >
-    {/* card */}
-      <div className='grid grid-cols-1  md:grid-cols-3 lg:grid-cols-5 gap-5 my-12'>
-         {
-    fastestRecipes.map(recipe=>(
-      
-      <div key={recipe.id} className=" overflow-hidden  bg-white">
-        {/* image section */}
-        <div className='  relative'  >
-          <Link to={`recipes/${recipe.id}`}>
-             <img src={recipe.image} className="w-full h-80 object-cover rounded-2xl" >
-          </img>
-          </Link>
-         <button className=' bg-white flex items-center gap-1 px-2 py-1 rounded-full absolute top-4 left-4'>
-           <IoMdStar className=' text-yellow-500 h-6 w-6'></IoMdStar>
-             <p>{recipe.rating}</p>
-         </button>
-          <button onClick={()=>handleFavorite(recipe)} className=' group cursor-pointer bg-white flex items-center px-3 py-3
-           rounded-full absolute top-4 right-4'>
-           <FaHeart className='  h-6 w-6 text-red-500 '></FaHeart>
-             
-         </button>
-        
-        </div>
-      {/* details section */}
-        <div>
-           <h2 className=' mt-4  font-semibold text-red-500 '>{recipe.foodName}</h2>
-           <h1 className=' mt-2 text-xl font-bold hover:text-red-500'>{recipe.title}</h1>
-           <div className=' flex gap-4 mt-4 text-gray-500'>
-            <div className=' flex items-center gap-1 '>
-              <CiClock2></CiClock2>
-             <p className=' hover:text-red-500'>{recipe.duration}</p>
+      <div className="flex justify-center gap-8">
+        <button
+          onClick={() => setActiveTab("latest")}
+          className={`text-xl font-semibold pb-2 transition
+            ${activeTab === "latest"
+              ? "text-gray-800"
+              : "text-gray-400 hover:text-gray-600"}`}
+        >
+          Latest Recipes
+        </button>
+
+        <button
+          onClick={() => setActiveTab("top")}
+          className={`text-xl font-semibold pb-2 transition
+            ${activeTab === "top"
+              ? "text-gray-800"
+              : "text-gray-400 hover:text-gray-600"}`} >
+          Top Rated Recipes
+        </button>
+
+        <button
+          onClick={() => setActiveTab("fast")}
+          className={`text-xl font-semibold pb-2 transition
+            ${activeTab === "fast"
+              ? "text-gray-800"
+              : "text-gray-400 hover:text-gray-600"}`}
+        >
+          Fastest Recipes
+        </button>
+      </div>
+
+      {/* Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 my-10">
+        {displayedRecipes.map(recipe => (
+          <div key={recipe.id} className="bg-white overflow-hidden">
+
+            {/* Image */}
+            <div className="relative">
+              <Link to={`recipes/${recipe.id}`}>
+                <img
+                  src={recipe.image}
+                  alt={recipe.title}
+                  className="w-full h-68 md:h-80 object-cover rounded-2xl"/>
+              </Link>
+
+              <button className="bg-white flex items-center gap-1 px-2 py-1 rounded-full absolute top-4 left-4">
+                <IoMdStar className="text-yellow-500 w-6 h-6" />
+                <p>{recipe.rating}</p>
+              </button>
+
+              <button
+                onClick={() => handleFavorite(recipe)}
+                className="bg-white p-3 rounded-full absolute top-4 right-4"
+              >
+                <FaHeart className="text-red-500 w-6 h-6" />
+              </button>
             </div>
-            <div className=' flex items-center gap-1'>
-              <p className=' hover:text-red-500'>{recipe.country}</p>
-            </div> 
-            <div className=' flex items-center gap-1'>
-              <SlCalender></SlCalender>
-               <p className=' hover:text-red-500'>{recipe.date}</p>
+
+            {/* Details */}
+            <div>
+              <h2 className=" mt-2 md:mt-4 font-semibold text-red-500">
+                {recipe.foodName}
+              </h2>
+
+              <h1 className="text-xl font-bold hover:text-red-500">
+                {recipe.title}
+              </h1>
+
+              <div className="flex gap-4  text-gray-500 text-sm">
+                <div className="flex items-center gap-1">
+                  <CiClock2 />
+                  <p>{recipe.duration}</p>
+                </div>
+
+                <div>
+                  <p>{recipe.country}</p>
+                </div>
+
+                <div className="flex items-center gap-1">
+                  <SlCalender />
+                  <p>{recipe.date}</p>
+                </div>
+              </div>
             </div>
 
-             </div>
+          </div>
+        ))}
+      </div>
 
-        </div>
-</div>
-    ))
-  } </div>
- </TabPanel>
-
-
-    
-  </Tabs> 
-        </div>
-    );
+    </div>
+  );
 };
 
 export default ExploreRecipes;
