@@ -4,16 +4,16 @@ const ContactUs = () => {
     return (
         <div className="  font-poppins">
            
-                <div className=" bg-red-600 text-center py-22 text-white">
-                     <h1 className="text-5xl font-bold">Contact Us</h1>
-                <p className="max-w-2xl mx-auto px-4 text-lg mt-4">
+                <div className=" bg-red-600 text-center py-16 md:py-22 text-white">
+                     <h1 className=" text-2xl md:text-5xl font-bold">Contact Us</h1>
+                <p className="max-w-2xl mx-auto px-4 text-lg mt-2 md:mt-4">
               Get in touch with Platea! Whether you have a question, need assistance,
                 our team is here to help. Reach out to us
                     today for a seamless experience.
                   </p>
                 </div>
 
-       <div className="max-w-full md:max-w-[80%] lg:max-w-[60%] mx-auto px-4 md:px-8 py-16">
+       <div className="max-w-full md:max-w-[80%] lg:max-w-[60%] mx-auto px-4 md:px-8 py-8">
       <form className="space-y-6">
 
          {/* Name */}

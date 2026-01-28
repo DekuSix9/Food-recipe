@@ -10,8 +10,8 @@ import { Link } from 'react-router-dom';
 const Favorite = () => {
     const{favorites,removeFromCart}=useContext(CartContext)
     return (
-        <div className=" max-w-11/12 mx-auto px-8">
-                    <div className='grid grid-cols-1  md:grid-cols-3 lg:grid-cols-5 gap-5 my-10'>
+        <div className=" max-w-11/12 mx-auto ">
+                    <div className='grid grid-cols-1  md:grid-cols-3 lg:grid-cols-4 gap-4 my-4 md:my-6'>
                {
           favorites.map(recipe=>(
             
@@ -19,7 +19,7 @@ const Favorite = () => {
               {/* image section */}
               <div className='  relative'  >
                 <Link to={`recipes/favorites/${recipe.id}`}>
-                   <img src={recipe.image} className="w-full h-80 object-cover rounded-2xl" >
+                   <img src={recipe.image} className="w-full h-68 md:h-80 object-cover rounded-2xl" >
                 </img>
                 </Link>
                
@@ -38,9 +38,9 @@ const Favorite = () => {
               </div>
             {/* details section */}
               <div>
-                 <h2 className=' mt-4  font-semibold text-red-500 '>{recipe.foodName}</h2>
-                 <h1 className=' mt-2 text-xl font-bold hover:text-red-500'>{recipe.title}</h1>
-                 <div className=' flex gap-4 mt-4 text-gray-500'>
+                 <h2 className='mt-2 md:mt-4 font-semibold text-red-500 '>{recipe.foodName}</h2>
+                 <h1 className=' text-xl font-bold hover:text-red-500'>{recipe.title}</h1>
+                 <div className=' flex gap-4  text-gray-500'>
                   <div className=' flex items-center gap-1 '>
                     <CiClock2></CiClock2>
                    <p className=' hover:text-red-500'>{recipe.duration}</p>

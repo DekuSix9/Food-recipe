@@ -73,8 +73,7 @@ const Videos = () => {
   {/*  Favorite */}
   <button
     onClick={() => handleFavorite(video)}
-    className="bg-white cursor-pointer flex items-center px-3 py-3 rounded-full absolute top-4 right-4 z-30"
-  >
+    className="bg-white cursor-pointer flex items-center px-3 py-3 rounded-full absolute top-4 right-4 z-30" >
     <FaHeart className="h-6 w-6 text-red-500" />
   </button>
 
