@@ -15,10 +15,8 @@ const Banner = () => {
           </h2>
 
           <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-gray-100">
-            Don't just dream it — discover the perfect recipe that turns
-            <span className="block">
-              your craving into a masterpiece.
-            </span>
+            Don't just dream it — discover the perfect recipe that turns your craving into a masterpiece.
+            
           </p>
 
           {/* Search Bar */}

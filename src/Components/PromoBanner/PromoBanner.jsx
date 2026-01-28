@@ -4,11 +4,11 @@ import { IoMdStar } from "react-icons/io";
 const PromoBanner = () => {
     return (
         <div className=' max-w-11/12 mx-auto '>
-             <div className="w-full  min-h-[350px]  md:min-h-[450px]  lg:min-h-[550px]  xl:min-h-[600px]   rounded-2xl
+             <div className="w-full  h-[450px]  md:h-[500px]  rounded-2xl
              bg-cover bg-center bg-no-repeat flex flex-col justify-start items-end  font-bold shadow-md"
              style={{backgroundImage:`url(${Image})`}} >
 
-              <div className=' max-w-2xl py-32 px-4 md:px-0'>
+              <div className=' max-w-2xl py-22 px-4 md:px-0'>
                 {/* rating button */}
                 <div className= "flex items-center gap-2 md:gap-4">
             <button className="bg-white flex items-center gap-2 px-3 py-1 rounded-full">

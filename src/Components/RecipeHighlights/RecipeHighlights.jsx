@@ -4,16 +4,12 @@ import RightImg from '../../assets/recipeHiglight/rightImg.jpg'
 import { IoMdStar } from "react-icons/io";
 
 
-
-
-
 const RecipeHighlights = () => {
     return (
         <div className=" max-w-11/12 mx-auto px-4 md:px-8 mt-16 ">
             <div className=" grid grid-cols-1 lg:grid-cols-2 gap-8 ">
                 {/* left content */}
               
-
                 <div  className=' w-full min-h-[350px]  md:min-h-[450px]  lg:min-h-[550px]  xl:min-h-[600px] 
                 bg-cover bg-center bg-no-repeat rounded-2xl flex flex-col'
 
