@@ -8,7 +8,7 @@ const PromoBanner = () => {
              bg-cover bg-center bg-no-repeat flex flex-col justify-start items-end  font-bold shadow-md"
              style={{backgroundImage:`url(${Image})`}} >
            {/* dark overlay */}
-                 <div className="absolute sm:hidden inset-0 bg-black/60 sm:bg-black/50 rounded-2xl"></div>
+                 <div className="absolute sm:hidden inset-0 bg-black/10 rounded-2xl"></div>
               <div className=' max-w-2xl py-22 px-4 md:px-0'>
                 {/* rating button */}
                 <div className= "flex items-center gap-2 md:gap-4">

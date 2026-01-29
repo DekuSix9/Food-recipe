@@ -9,7 +9,7 @@ const Banner = () => {
         className="relative h-[380px] sm:h-[450px] md:h-[600px] lg:h-[700px] w-full rounded-2xl bg-cover bg-center flex items-center text-white shadow-md"
         style={{ backgroundImage: `url(${BannerImg})` }}>
         {/*  Dark Overlay */}
-        <div className="absolute inset-0 sm:hidden bg-black/60 sm:bg-black/50 rounded-2xl"></div>
+        <div className="absolute inset-0 sm:hidden bg-black/50 rounded-2xl"></div>
 
         {/* Content */}
         <div className="relative px-4 sm:px-8 lg:px-16 max-w-xl sm:max-w-2xl">

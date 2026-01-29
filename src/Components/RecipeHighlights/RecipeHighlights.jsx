@@ -15,7 +15,7 @@ const RecipeHighlights = () => {
 
                      style={{backgroundImage:`url(${LeftImg})`}}>
                         {/* dark overlay */}
-                     <div className="absolute  inset-0 bg-black/60 sm:bg-black/50 rounded-2xl"></div>
+                     <div className="absolute  inset-0 bg-black/50 rounded-2xl"></div>
                      <div className=' max-w-lg px-4 md:px-8 pt-6 md:pt-8 mt-2 md:mt-16'>
                          {/* rating */}
                     <div className=' flex gap-2 md:gap-4 items-center'>
@@ -56,7 +56,7 @@ const RecipeHighlights = () => {
                 bg-cover bg-center bg-no-repeat rounded-2xl flex flex-col'
                    style={{backgroundImage:`url(${RightImg})`}} >
                      {/* dark overlay */}
-                     <div className="absolute inset-0 bg-black/60 sm:bg-black/50 rounded-2xl"></div>
+                     <div className="absolute inset-0 bg-black/50 rounded-2xl"></div>
 
                        <div className=' max-w-lg px-4 md:px-8 pt-6 md:pt-8 mt-2 md:mt-16'>
                          {/* rating */}
